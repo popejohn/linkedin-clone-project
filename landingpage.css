@@ -1,0 +1,204 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-left: 5px !important;
+}
+.nav-icon svg{
+    width: 23px !important;
+    height: auto !important;
+}
+.nav-icon span{
+    font-size: small !important;
+}
+.logo-big{
+    top: 20px !important;
+    left: 5vw !important;
+}
+.small-logo{
+    top: 25px;
+    left: 5px;
+}
+.scroll{
+    width: 54vw;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.get-app{
+    width: 105px;
+}
+.botton-hover:hover{
+    color: rgb(77,141,204) !important;
+    background-color: rgb(229, 240, 252) !important;
+}
+.input-div input{
+    outline: none !important;
+    width: 100% !important;
+    height: 55px !important;
+}
+.input-div input:focus{
+    box-shadow: none;
+}
+.input-div{
+    height: fit-content !important;
+    background: transparent !important;
+}
+.input-div span{
+    right: 3%;
+}
+.hover-gray:hover{
+    background-color: rgb(247, 246, 246) !important;
+}
+.hover-gray-button:hover{
+    background-color: rgb(247, 246, 246) !important;
+}
+.hover-gray-button:focus{
+    background-color: rgb(247, 246, 246) !important;
+}
+.small-text{
+    font-size: small;
+}
+.no-padding{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.hover-light-brown:hover{
+    background-color: rgb(219, 213, 203) !important;
+}
+.hover-light-brown :visited{
+    color: rgb(121, 64, 214) !important;
+}
+.hover-light-brown:active span{
+    color: black !important;
+}
+.section-10{
+    background: url("https://vancomputer.ca/public/img/blog/svg/4.svg");
+    height: 600px;
+}
+.btn-primary{
+    background-color: rgb(10,102,194) !important;
+}
+.btn-primary:hover{
+    background-color: rgb(3, 48, 94) !important
+}
+.address-display-big{
+    margin-top: -25px !important;
+    width: 95vw !important;
+}
+.section1{
+    padding-right: 0 !important;
+}
+.hover-text-dark:hover{
+     color: black!important;
+}
+.minimum-footer{
+    min-width: 150px !important;
+}
+.smaller-text{
+    font-size: 12px !important;
+}
+.hover-border-dark:hover{
+    border: 2px solid black !important;
+}
+.hover-underline-blue:hover{
+    text-decoration: underline rgb(1, 1, 97) !important;
+}
+.hover-text-blue:hover{
+    color: rgb(10, 10, 70)!important;
+}
+footer p{
+    margin-bottom: -0.1px!important;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .scroll {
+        display: none;
+    }
+    .section1{
+        flex-direction: column !important;
+    }
+    .section1-image{
+        position: relative!important;
+        width: 100% !important;
+    }
+    .section1-image img{
+        width: 60% !important;
+        margin: 20px 0 0 15vw;
+        height: auto !important;
+    }
+    .section1-form, form{
+        width: 100% !important;
+    }
+    .section1-form .firstp{
+        width: 100% !important;
+        font-size: 2rem!important;
+        text-align: center;
+    }
+   .small-text {
+    width: 50% !important;
+        font-size: x-small !important;
+        text-align: center !important;
+        margin: 0 auto!important;
+   }
+   .continue{
+    width: 80% !important;
+    margin: 0 auto!important;
+   }
+   .section7-flex{
+    flex-direction: column-reverse!important;
+    justify-content: start!important;
+    align-items: start!important;
+    width: 100%!important;
+   }
+   .section-7 img{
+     width: 280px!important;
+   }
+   .section-9{
+        margin-top: -100px!important;
+   }
+   .child-med{
+    width: 100% !important;
+   }
+   .section-10{
+    background: none!important;
+    height: fit-content !important;
+    padding: 100px 0!important;
+    margin-top: -150px!important;
+   }
+   .footer-links{
+    flex-direction: column!important;
+    justify-content: start!important;
+    align-items: start!important;
+    margin-left: 2px!important;
+   }
+   .footer-col{
+    flex-direction: column!important;
+    justify-content: start!important;
+    align-items: start!important;
+   }
+}
+
+@media screen and (max-width: 992px) {
+    .section2, .section3, .section5, .section6, .section8{
+        flex-direction: column !important;
+        justify-content: start !important;
+        align-items: start !important;
+        width: 100% !important;
+    }
+    .child{
+        width: 100% !important;
+    }
+    .section2 p:nth-last-of-type(3){
+        font-weight: bold!important;
+        font-size: medium!important;
+    }
+    .footer-links{
+        gap: 1.5vw !important;
+    }
+}

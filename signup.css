@@ -1,0 +1,111 @@
+*, ::after,::before{
+    border: 0px !important;
+    margin: 0px !important;
+    box-sizing: border-box;
+}
+.col-contain{
+    width: 400px !important;
+}
+.input-div{
+    height: 50px !important;
+    background-color: white !important;
+}
+.input-div input{
+    height: 30px !important;
+}
+.show-hide{
+    right: 2% !important;
+    bottom: 20% !important;
+}
+.small-text{
+    font-size: 13px !important;
+}
+.botton-hover:hover{
+    background-color: rgb(239, 244, 250) !important;
+}
+.hover-gray:hover{
+    background-color: rgb(247, 246, 246) !important;
+    border: 2px solid black !important;
+}
+.focus-gray:focus-within input{
+    background-color: rgb(247, 246, 246) !important;
+    border: 2px solid black !important;
+}
+.hover-underline:hover{
+    text-decoration: underline !important;
+    text-decoration-color: black !important;
+}
+.hover-underline-blue:hover{
+    text-decoration: underline !important;
+    text-decoration-color: rgb(10,102,194)!important;
+}
+.hover-blue:hover{
+    background-color: rgb(182, 208, 240) !important;
+}
+.hover-blue:focus{
+    background-color: rgb(182, 208, 240) !important;
+}
+.hover-dark-blue:hover{
+    background-color: rgb(3, 59, 114)!important;
+}
+.input-div:focus-within .input-hide{
+    height:10% !important;
+    color: black !important;
+    font-size: small !important;
+    top: 10px !important;
+    left: 10px !important;
+}
+.focus-border-blue:focus-within{
+    border: 2px solid rgb(10,102,194)!important;
+}
+
+.input-hide{
+    z-index: 0;
+}
+.show{
+    z-index: 2;  
+}
+.show-hide{
+    background-color: white !important;
+}
+.signup-show-hide{
+    background-color: rgba(252, 252, 252, 0.9) !important;
+    width: fit-content !important;
+}
+.hide{
+    z-index: 1;
+}
+.show:focus{
+    z-index: -1 !important;
+} 
+.hide:focus{
+    z-index: -1;
+}
+.signup-show-hide{
+    right: 3%;
+    top: 20%;
+}
+main{
+    margin-top: -30px !important;
+    padding-top: 20px !important;
+}
+
+
+/* Media queries */
+@media screen and (max-width:992px) {
+    .signup-font{
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    .row {
+        padding-left: 2px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .logo-img{
+        width: 100px !important;
+    }
+    main {
+        background-color: white !important;
+    }
+}

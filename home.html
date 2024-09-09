@@ -1,0 +1,1933 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed | Linkedin</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="media/x-icon" href="Project images/linkedin_image-removebg-preview.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0271217e1a.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: rgb(244,242,238);">
+    <!-- nav -->
+    <div class="container-fliud">
+        <div class= "position-fixed top-0 border border-tertiary" style="background-color: white; z-index: 20; width: 100vw">
+        <nav class="navbar container-lg ps-2 ps-lg-0 pb-0 mb-0 d-flex flex-row justify-content-start justify-content-lg-between align-items-center gap-lg-3" style="margin-top: -12px; gap: 35px;">
+            <div class="d-flex justify-content-center mt-2 logo-search">
+                <div class="navbar-brand py-0 ms-2 ms-md-0" style="height: fit-content;">
+                    <img src="Project images/linkedin_image-removebg-preview.png" alt="Linkedin small logo" style="height: 35px;" class="me-1 me-md-2 my-2 my-md-1 my-lg-0 me-lg-0">
+                </div>
+                <button class="search-click btn rounded ps-3 py-1 d-none d-lg-flex justify-content-center align-items-center" style="height: fit-content; border: none; background-color: rgb(237,243,248); margin-left: -7px;">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>
+                    <input class="mx-2 search-input" role="combobox" aria-autocomplete="list" aria-expanded="false" type="text" placeholder="Search" aria-label="Search" aria-activedescendant style="height: 25px; width: 230px; background: transparent; border: none; outline: none;">
+                    <div class="search-popup rounded position-absolute start-0 py-2 shadow-sm flex-column justify-content-center align-items-start" style="display: none; width: 450px; z-index: 13; top:75px; background-color: white;">
+                        <p class="fw-semibold small-text text-muted ms-2">Try searching for</p>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#hiring</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#jobadvice</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#covid-19</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#greatresignation</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#newjobpostings</span></div>
+                    </div>
+                    <div class="position-absolute search-popup" style="display: none; width: 120vw; height: 100vh; background-color: rgba(14, 14, 13, 0.863); z-index: 12; top: 75px; right: -10vw;"></div>
+                </button> 
+                <div class="nav-item nav-icon d-flex d-lg-none me-md-0" style="margin-right: -10px;">
+                    <button style="display: flex; justify-content: center; align-items: center; background-color: white; border: none;" class="search-button" onclick="nodisplay()">
+                        <div class="search-icon pb-1 d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            <div class="text-muted small-text d-none d-md-block" style="">Search</div>
+                        </div>
+                        <!-- 656565yfggfg -->
+                        <!-- <div class="search-bar position-relative py-1 rounded justify-content-center align-items-start px-2" style="display: none; width: 85vw; height: fit-content; border: 2px solid black; background-color: rgb(237,243,248);">
+                            <i class="fa-solid fa-magnifying-glass me-2"></i>
+                            <input type="search" style="width: 95%; background: transparent; border: none; outline: none;">
+                            <div class="rounded position-absolute start-0 py-2 shadow-sm d-flex flex-column just-content-center align-items-start" style="width: 100%; z-index: 11; top: 108%; background-color: white;">
+                                <p class="fw-semibold small-text text-muted ms-2">Recent</p>
+                                <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#hiring</span></div>
+                                <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#jobadvice</span></div>
+                                <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#covid-19</span></div>
+                                <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#greatresignation</span></div>
+                                <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#newjobpostings</span></div>
+                            </div>
+                            <div class="position-absolute" style="width: 100vw; height: 100vh; background-color: rgba(14, 14, 13, 0.863); z-index: 10; top: 45px; left: -7vw;"></div>
+                        </div> -->
+                    </button>
+                </div>
+            </div>
+            <!-- Navbar icons -->
+           <ul class="navbar-nav d-flex flex-row justify-content-start justify-content-md-end align-items-center align-items-sm-end gap-md-4" style="gap: 35px;" id="navno-display">
+                <li class="nav-item  nav-icon px-3 home-border" style="border-bottom: 2px solid black; margin-right: -15px;">
+                    <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center" aria-current="page">
+                        <svg class="span-home-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                          </svg>
+                        <div class="small-text d-none d-md-block">Home</div>
+                    </a>
+                </li>
+                    <li class="nav-item nav-icon px-xl-1">
+                        <a href="network.html" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center">   
+                            <svg class="span-less-margin" xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M9 14v6H0v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3Zm5.5-3c1.9 0 3.5-1.6 3.5-3.5S16.4 4 14.5 4 11 5.6 11 7.5s1.6 3.5 3.5 3.5Zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5V20h7v-4.5c0-1.4-1.1-2.5-2.5-2.5ZM4.5 0C2 0 0 2 0 4.5S2 9 4.5 9 9 7 9 4.5 7 0 4.5 0Z" fill="currentColor"></path>
+                            </svg>
+                            <div class="small-text d-none d-md-block">My Network</div>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1">
+                        <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center"> 
+                            <svg class="span-job-margin" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M15 4V3c0-1.7-1.3-3-3-3H8C6.3 0 5 1.3 5 3v1H0v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V4h-5ZM7 3c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1H7V3Zm10 9c1.2 0 2.3-.5 3-1.4V15c0 1.7-1.3 3-3 3H3c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4h14Z" fill="currentColor"></path>
+                            </svg>
+                            <div class="small-text d-none d-md-block">Jobs</div>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1 show-from-338" style="display: block;">
+                        <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center">
+                            <svg class="span-messaging-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                              </svg>
+                            <div class="small-text d-none d-md-block">Messaging</div>
+                         </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1 show-from-338" style="display: block;">
+                        <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative">
+                            <svg class="span-notification-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="22" height="22" focusable="false">
+                                <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                              </svg>
+                            <div class="small-text d-none d-md-block">Notifications</div>
+                            <span class="position-absolute translate-middle badge rounded-pill bg-danger p-1" style="left: 65%; top:30%;">10</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1 display-from-445" style="display: block;">
+                        <button class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative me-button" type="button" style="border: none; background: transparent;">
+                            <img src="Project images/John new.jpg" alt="profile picture" style="width: 25px; height: 26px; border-radius: 50%;">
+                            <div class="d-flex just-content-center align-items-center d-none d-md-flex"> 
+                                <div style="margin-right: 3px;" class="hover-dark small-text">Me</div>
+                                <div class="position-relative">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="profile-dropdown position-absolute end-0 d-none flex-column justify-content-start align-items-start py-3 px-3" style="background-color: white; width: 300px; height: 70vh; overflow: auto; border-radius: 10px 0 10px 10px; top: 40px;">
+                                        <div>
+                                            <div class="d-flex justify-content-start align-items-start">
+                                                <img src="Project images/John new.jpg" alt="profile picture" class="mx-2" style="width: 80px; height: 80px; border-radius: 50%; border: 1px solid black;">
+                                                <div class="text-muted">
+                                                    <h5 style="text-align: left; font-size: medium;">John Idowu</h5>
+                                                    <p class="text-black-50 fw-semibold" style="text-align: left; font-size: small;">A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                                        various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                                        but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="btn btn-outline-primary fw-semibold hover-blue hover-border-blue rounded-pill" style="width: 100%;">View Profile</a>
+                                        </div>
+                                        <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                        <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                            <h5 class="text-muted fw-semibold" style="font-size: small;">Account</h5>
+                                            <div>
+                                                <img src="Project images/gold premium.jpeg" style="width: 15px;">
+                                                <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Premium features</a>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Settings and Privacy</a>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Help</a>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Language</a>
+                                        </div>
+                                        <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                        <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                            <h5 class="text-muted fw-semibold" style="font-size: small;">Manage</h5>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Post & Activity</a>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Job Posting Account</a>
+                                        </div>
+                                        <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                        <div>
+                                            <a href="signin.html" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Sign out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </li> 
+                    <li class="nav-item nav-icon position-relative display-445-576" style="display: none;">
+                        <button class="ellipses-focus d-flex pb-1 flex-column justify-content-center align-items-center" style="background-color: white; border: none;" onclick="myFunction()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                            <!-- Hiden nav icons for business and learning -->
+                        </button>
+                        <div class="position-absolute business-icons rounded justify-content-center align-items-center shadow-sm; px-3 gap-2 py-2" style="width: fit-content; background-color: white; display:none; flex-direction: row; top: 110%; right: 0;" id="showme-onclick">
+                            <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center me-2" style="border: none; background: transparent;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                </svg>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="small-text text-muted me-1 d-none">
+                                        For Business
+                                    </span>
+                                    <i class="fa-solid fa-caret-down d-none"></i>
+                                    </div>
+                                        <!-- For business dropdown -->
+                                    <div class="business-dropdown position-absolute vh-100 overflow-auto shadow-sm d-none flex-column align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: -5px; right: -80px;">
+                                        <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                            <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-compass-24.png" alt="">
+                                                    <span>Sell</span>
+                                                </a>
+                                            </div>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                    <span>Groups</span>
+                                                </a>
+                                            </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Talents</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-leader-48.png" alt="">
+                                                        <span>Talent Insights</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-new-job-40.png" alt="">
+                                                        <span>Post a job</span>
+                                                    </a>
+                                                </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Sales</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-services-62.png" alt="">
+                                                        <span>Services Marketplace</span>
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Marketing</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-dart-25.png" alt="">
+                                                        <span>Advertise</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-column justify-content-start align-items-start py-4" style="border-top: 1px solid rgb(224, 224, 224);">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </button>
+                                    <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                            <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                            <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                            <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                            <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                          </svg>
+                                          <span class="small-text text-muted d-none">Learning</span>
+                                    </a>
+                              </div>
+                         </li>
+                         <!-- Hidden business and learning icons least -->
+                         <li class="nav-item nav-icon position-relative business-learn-least" style="display: none;">
+                            <button class="ellipses-focus d-flex pb-1 flex-column justify-content-center align-items-center" style="background-color: white; border: none;" onclick="myFunction2()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                                <!-- Hiden nav icons for business and learning -->
+                            </button>
+                            <div class="position-absolute business-icons rounded justify-content-center align-items-center shadow-sm; px-3 gap-2 py-2" style="width: fit-content; background-color: white; display:none; flex-direction: row; top: 110%; right: 0;" id="showme-onclick2">
+                                    <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center">
+                                        <svg class="span-messaging-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                                          </svg>
+                                        <div class="small-text d-none d-md-block">Messaging</div>
+                                     </a>
+                                    <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative">
+                                        <svg class="span-notification-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="22" height="22" focusable="false">
+                                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                                          </svg>
+                                        <div class="small-text d-none d-md-block">Notifications</div>
+                                        <span class="position-absolute translate-middle badge rounded-pill bg-danger p-1" style="left: 65%; top:30%;">10</span>
+                                    </a>
+                                <button class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative me-button" type="button" style="border: none; background: transparent;">
+                                    <img src="Project images/John new.jpg" alt="profile picture" style="width: 25px; height: 26px; border-radius: 50%;">
+                                    <div class="d-flex just-content-center align-items-center d-none d-md-flex"> 
+                                        <div style="margin-right: 3px;" class="hover-dark small-text">Me</div>
+                                        <div class="position-relative">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                            <div class="profile-dropdown position-absolute end-0 d-none flex-column justify-content-start align-items-start py-3 px-3" style="background-color: white; width: 300px; height: 70vh; overflow: auto; border-radius: 10px 0 10px 10px; top: 40px;">
+                                                <div>
+                                                    <div class="d-flex justify-content-start align-items-start">
+                                                        <img src="Project images/John new.jpg" alt="profile picture" class="mx-2" style="width: 80px; height: 80px; border-radius: 50%; border: 1px solid black;">
+                                                        <div class="text-muted">
+                                                            <h5 style="text-align: left; font-size: medium;">John Idowu</h5>
+                                                            <p class="text-black-50 fw-semibold" style="text-align: left; font-size: small;">A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                                                various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                                                but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="btn btn-outline-primary fw-semibold hover-blue hover-border-blue rounded-pill" style="width: 100%;">View Profile</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Account</h5>
+                                                    <div>
+                                                        <img src="Project images/gold premium.jpeg" style="width: 15px;">
+                                                        <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Premium features</a>
+                                                    </div>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Settings and Privacy</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Help</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Language</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Manage</h5>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Post & Activity</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Job Posting Account</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div>
+                                                    <a href="signin.html" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Sign out</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center me-2" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                        <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="small-text text-muted me-1 d-none">
+                                            For Business
+                                        </span>
+                                        <i class="fa-solid fa-caret-down d-none"></i>
+                                        </div>
+                                            <!-- For business dropdown -->
+                                        <div class="business-dropdown position-absolute vh-100 overflow-auto shadow-sm d-none flex-column align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: -5px; right: -80px;">
+                                            <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-compass-24.png" alt="">
+                                                        <span>Sell</span>
+                                                    </a>
+                                                </div>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                        <span>Groups</span>
+                                                    </a>
+                                                </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Talents</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-leader-48.png" alt="">
+                                                            <span>Talent Insights</span>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="business-dropdown my-3">
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-new-job-40.png" alt="">
+                                                            <span>Post a job</span>
+                                                        </a>
+                                                    </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Sales</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-services-62.png" alt="">
+                                                            <span>Services Marketplace</span>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Marketing</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-dart-25.png" alt="">
+                                                            <span>Advertise</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="d-flex flex-column justify-content-start align-items-start py-4" style="border-top: 1px solid rgb(224, 224, 224);">
+                                                    <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        </button>
+                                        <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                                <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                                <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                                <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                              </svg>
+                                              <span class="small-text text-muted d-none">Learning</span>
+                                        </a>
+                                  </div>
+                             </li>
+                         <!-- Hidden business and learning icons at 445px -->
+                         <li class="nav-item nav-icon position-relative business-learn-445" style="display: none;">
+                            <button class="ellipses-focus d-flex pb-1 flex-column justify-content-center align-items-center" style="background-color: white; border: none;" onclick="myFunction1()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                                <!-- Hiden nav icons for business and learning -->
+                            </button>
+                            <div class="position-absolute business-icons rounded justify-content-center align-items-center shadow-sm; px-3 gap-2 py-2" style="width: fit-content; background-color: white; display:none; flex-direction: row; top: 110%; right: 0;" id="showme-onclick1">
+                                <button class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative me-button" type="button" style="border: none; background: transparent;">
+                                    <img src="Project images/John new.jpg" alt="profile picture" style="width: 25px; height: 26px; border-radius: 50%;">
+                                    <div class="d-flex just-content-center align-items-center d-none d-md-flex"> 
+                                        <div style="margin-right: 3px;" class="hover-dark small-text">Me</div>
+                                        <div class="position-relative">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                            <div class="profile-dropdown position-absolute end-0 d-none flex-column justify-content-start align-items-start py-3 px-3" style="background-color: white; width: 300px; height: 70vh; overflow: auto; border-radius: 10px 0 10px 10px; top: 40px;">
+                                                <div>
+                                                    <div class="d-flex justify-content-start align-items-start">
+                                                        <img src="Project images/John new.jpg" alt="profile picture" class="mx-2" style="width: 80px; height: 80px; border-radius: 50%; border: 1px solid black;">
+                                                        <div class="text-muted">
+                                                            <h5 style="text-align: left; font-size: medium;">John Idowu</h5>
+                                                            <p class="text-black-50 fw-semibold" style="text-align: left; font-size: small;">A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                                                various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                                                but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="btn btn-outline-primary fw-semibold hover-blue hover-border-blue rounded-pill" style="width: 100%;">View Profile</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Account</h5>
+                                                    <div>
+                                                        <img src="Project images/gold premium.jpeg" style="width: 15px;">
+                                                        <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Premium features</a>
+                                                    </div>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Settings and Privacy</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Help</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Language</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Manage</h5>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Post & Activity</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Job Posting Account</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div>
+                                                    <a href="signin.html" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Sign out</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center me-2" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                        <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="small-text text-muted me-1 d-none">
+                                            For Business
+                                        </span>
+                                        <i class="fa-solid fa-caret-down d-none"></i>
+                                        </div>
+                                            <!-- For business dropdown -->
+                                        <div class="business-dropdown position-absolute vh-100 overflow-auto shadow-sm d-none flex-column align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: -5px; right: -80px;">
+                                            <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-compass-24.png" alt="">
+                                                        <span>Sell</span>
+                                                    </a>
+                                                </div>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                        <span>Groups</span>
+                                                    </a>
+                                                </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Talents</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-leader-48.png" alt="">
+                                                            <span>Talent Insights</span>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="business-dropdown my-3">
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-new-job-40.png" alt="">
+                                                            <span>Post a job</span>
+                                                        </a>
+                                                    </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Sales</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-services-62.png" alt="">
+                                                            <span>Services Marketplace</span>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Marketing</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-dart-25.png" alt="">
+                                                            <span>Advertise</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="d-flex flex-column justify-content-start align-items-start py-4" style="border-top: 1px solid rgb(224, 224, 224);">
+                                                    <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        </button>
+                                        <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                                <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                                <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                                <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                              </svg>
+                                              <span class="small-text text-muted d-none">Learning</span>
+                                        </a>
+                                  </div>
+                             </li>  
+                            <!-- Visible business and learning icons -->
+                    <li class="nav-item nav-icon d-none d-sm-flex ms-md-0" style="margin-left: -10px;">
+                        <div class="business-icons justify-content-center align-items-center shadow-sm ps-3 pb-1" style="width: fit-content;border-left: 1px solid rgb(206, 204, 204); background-color: white; display:flex; flex-direction: row; top: 110%; right: 0;" id="showme-onclick">
+                            <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center" style="border: none; background: transparent; margin-right: -5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                </svg>
+                                <div class="d-flex justify-content-center align-items-center d-none d-md-block">
+                                    <span class="small-text text-muted me-1">
+                                        For Business
+                                    </span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                        <!-- For business dropdown -->
+                                    <div class="business-dropdown position-absolute shadow-sm d-none flex-column flex-md-row align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: 110%; right: 0px;height: 88vh; overflow: auto;">
+                                        <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                            <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-compass-24.png" alt="">
+                                                    <span>Sell</span>
+                                                </a>
+                                            </div>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                    <span>Groups</span>
+                                                </a>
+                                            </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Talents</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-leader-48.png" alt="">
+                                                        <span>Talent Insights</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-new-job-40.png" alt="">
+                                                        <span>Post a job</span>
+                                                    </a>
+                                                </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Sales</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-services-62.png" alt="">
+                                                        <span>Services Marketplace</span>
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Marketing</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-dart-25.png" alt="">
+                                                        <span>Advertise</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-column justify-content-start align-items-start py-4 py-md-0 px-0 px-md-5">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </button>
+                                </div>
+                            </li> 
+                            <li class="nav-item learning-icon nav-icon d-none d-sm-flex ms-md-0" style="margin-left: -10px; margin-bottom: -2px;">
+                                <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                        <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                        <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                        <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                        <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                      </svg>
+                                      <span class="small-text text-muted d-none d-md-block">Learning</span>
+                                </a>
+                            </li>          
+            </ul>
+        </div>
+     </nav>
+    </div>
+     <!-- Main section -->
+     <main class="pt-4" style="width: 100%; margin-top: 60px;">
+        <div class="container-sm text-center"> 
+            <div class="row">
+            <!-- Left column -->
+             <div class="col-md-4 col-lg-3 d-none d-md-block" style="width: 280px;">
+                <div class="col-10 rounded">
+                    <!-- Top-Left column -->
+                    <div class="shadow-sm rounded" style="background-color: white; width: 100%;">
+                        <div class="rounded-top" style="height: 4px; background-color: rgb(249,201,130);"></div>
+                        <div class="position-relative d-flex justify-content-between" style="background-color: rgb(166, 177, 179);height: 70px; overflow: hidden;">
+                            <div class="position-absolute" style="width: 65%; height: 200px; background: linear-gradient(rgb(80,90,92) 40%, rgb(193, 199, 201), white); border-radius: 0 50% 50% 0; bottom: -70px;">
+                            </div>
+                            <div class="position-absolute end-0" style="width: 30%; height: 100%; background: linear-gradient(rgb(104,115,117), rgb(178,196,199));"></div>
+                            <p class="position-absolute text-light" style="left: 2%;top: 5px; letter-spacing: 2px; font-size: small;">PREMIUM</p>
+                        </div>
+                        <div class="position-relative pt-2 px-3">
+                            <img class="position-absolute rounded-circle" src="Project images/John.jpg" alt="Profile picture" style="width: 80px; height: 75px; top: -15%; left: 30%;">
+                            <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="text-decoration-none text-muted hover-underline-black fw-semibold fs-5"><p class="mt-5">John Idowu</p></a>
+                            <p class="text-black-50 small-text" style="text-align: center;">
+                                A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                    various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                    but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class=" hover-gray px-3 py-1">
+                                <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="d-flex flex-row justify-content-between align-items-center text-decoration-none">
+                                    <div class="small-text text-black-50 fw-bold">Profile viewers</div>
+                                    <div class="badge text-info">62</div>
+                                </a>
+                            </div>
+                            <div class="hover-gray px-3 mb-2 py-1" style="margin-top: -5px;">
+                                <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="d-flex flex-row justify-content-between align-items-center text-decoration-none">
+                                    <div class="small-text text-black-50 fw-bold">Post impressions</div>
+                                    <div class="badge text-info">5</div>
+                                </a>
+                            </div>
+                            <div class="px-3 border border-start-0 border-end-0 border-tertiary hover-gray" style="margin-top: -5px;">
+                                <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="d-flex flex-row justify-content-start align-items-center text-decoration-none">
+                                     <img src="Project images/gold premium.jpeg" alt="gold square" style="height: 10px;">
+                                     <p class="small-text text-black-50 fw-bold mx-2 mt-3">See your Premium features</p>
+                                 </a> 
+                             </div>
+                             <div class="hover-gray px-3" style=";">
+                                <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="d-flex flex-row justify-content-start align-items-center text-decoration-none">
+                                    <i class="fa-solid fa-bookmark text-dark"></i>
+                                    <p class="small-text text-black-50 fw-bold mx-2 mt-3">Saved items</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom-Left Column -->
+                    <div class="mt-3 rounded shadow-sm pt-3" style="background-color: white;">
+                        <div class="d-flex justify-content-between align-items-center px-3">
+                            <p class="small-text text-nuted fw-semibold">Recent</p>
+                            <button type="button" class="border-0 p-2 rounded-circle hover-deep-gray" style="background: transparent;">
+                                <span class="caret-hover" style="display: none;"><i class="fa-solid fa-angle-up"></i></span>
+                            </button>           
+                        </div>
+                        <div class="w-100">
+                            <div class="px-3 pt-2 pb-0 hover-gray">
+                                <a class="focus-underline-black hover-black text-muted text-decoration-none" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;" href="https://www.linkedin.com/events">
+                                    <div class="" style="margin-bottom: 12px;"><i class="fa-solid fa-calendar-day text-dark"></i></div>
+                                    <div class="ms-2 fw-semibold overflow-hidden" style="font-size: small; width: 80%;"><p style="width: 250px;">Problem solving and decision making</p></div>
+                                </a>
+                            </div>
+                            <div class="px-3 py-2 hover-gray mt-1">
+                                <a class="focus-underline-black text-muted hover-black text-decoration-none d-flex justify-content-start align-items-center" href="https://www.linkedin.com/events">
+                                    <i class="fa-solid fa-chalkboard-user text-dark"></i>
+                                    <span class="fw-semibold ms-3" style="font-size: small; ">A tutor's perspective</span>
+                                </a>
+                            </div>
+                            <div class="px-3 py-2 hover-gray">
+                                <a class="focus-underline-black text-muted text-decoration-none hover-black d-flex justify-content-start align-items-center" href="https://www.linkedin.com/events">
+                                    <i class="fa-solid fa-hashtag text-dark"></i>
+                                    <span class="fw-semibold ms-3" style="font-size: small;">datascience</span>
+                                </a>
+                            </div>
+                            <div class="px-3 pt-2 pb-0 hover-gray">
+                                <a class="focus-underline-black hover-black text-muted text-decoration-none d-flex justify-content-start align-items-center" href="https://www.linkedin.com/events">
+                                    <i class="fa-solid fa-chalkboard-user text-dark" style="margin-top:-15px;"></i>
+                                    <div class="fw-semibold" style="width: 70%; font-size: small;overflow: hidden;"><p style="width: 300px;  text-overflow: ellipsis;">Nigeria Business Network | Lagos Oil and Gas</p></div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Groups -->
+                         <div class="text-start pb-4">
+                            <div class="px-3 d-flex justify-content-between align-items-center">
+                                <p class="small-text fw-bold text-primary hover-underline-blue">Groups</p>
+                                <button type="button" class="border-0 p-2 rounded-circle hover-deep-gray" style="background: transparent;">
+                                    <span class="caret-hover" style="display: none;"><i class="fa-solid fa-angle-up"></i></span>
+                                </button>
+                            </div>
+                            <div class="px-3 pt-2 pb-0 hover-gray"> 
+                                <a class="focus-underline-black hover-black text-muted text-decoration-none d-flex justify-content-start align-items-center" href="https://www.linkedin.com/events">
+                                    <i class="fa-solid fa-chalkboard-user text-dark" style="margin-top:-15px;"></i>
+                                    <div class="fw-semibold ms-3" style="width: 70%; font-size: small;overflow: hidden;"><p style="width: 300px;  text-overflow: ellipsis;">Nigeria Business Network | Lagos Oil and Gas</p></div>
+                                </a>
+                            </div>
+                            <div class="px-3 py-2 hover-gray mt-0" style="">
+                                <a class="focus-underline-black hover-black text-muted text-decoration-none d-flex justify-content-start align-items-center" href="https://www.linkedin.com/events">
+                                    <i class="fa-solid fa-chalkboard-user text-dark"></i>
+                                    <span class="fw-semibold ms-3" style="font-size: small; ">A tutor's perspective</span>
+                                </a>
+                            </div>
+                            <div class="px-3 py-2 hover-gray" style=""><a class="ps-5 py-1 text-black-50 hover-black fw-semibold text-decoration-none" href="https://www.linkedin.com/groups">See all</a></div>
+                         </div>
+                        <!-- Events Bottom Left-->
+                        <div class="pb-3">
+                            <div class="px-3 d-flex justify-content-between align-items-center">
+                                <p class="small-text fw-bold text-primary hover-underline-blue">Events</p>
+                                <button class="border-0 p-1 rounded-circle hover-deep-gray" style="background: transparent;" onclick="plusFunction()">
+                                    <span class="caret-hover"><i class="fa-solid fa-plus"></i></span>
+                                    <!-- Plus sign pop up button-->
+                                </button>
+                                <!-- Pop up container -->
+                                <div class="eventPopup-shade position-fixed" style="display: none; width: 99vw; height: 100vh; z-index: 3; top: 0; left: 0; background-color: rgba(144, 144, 146,0.5);" id="event-popup">
+                                    <div class="pop-up-container pb-4 rounded border position-fixed border-tertiary shadow  overflow-auto" id="popup1" style="top: 10vh; width: 40vw; height: 90vh; z-index: 5; background-color: white; left: 30vw;">
+                                        <div class="d-flex p-3 justify-content-between align-items-center">
+                                            <p class="text-dark fs-4">Create an Event</p>
+                                            <button type="button" class="btn-close dark" data-bs-dismiss="pop-up-container" style="margin-top: -15px;" onclick="eventCloseFunction()"></button>
+                                        </div> 
+                                        <!-- Event popup picture container -->
+                                        <label for="eventImage-input" style="width: 100%; height: fit-content;" >
+                                            <img src="Project images/imageplaceholder.png" style="width: 100%; height: auto;" id="event-pic">
+                                        </label>
+                                        <input class="d-none" type="file" accept="image/jpeg, image/png, image/jpg image/webp" id="eventImage-input">
+                                        <form class="text-start px-4 mt-3">
+                                            <p>Event type</p>
+                                            <fieldset class="fs-5">
+                                                <label for="event-typeA" class="mx-3"><input class="form-action" type="radio" name="eventType" id="event-typeA" checked> Online</label>
+                                                <label for="event-typeB"><input class="form-action ms-5 me-1" type="radio" name="eventType" id="event-typeB"> In Person</label>
+                                            </fieldset>
+                                            <fieldset class="mt-3">
+                                                <label class="mb-2" for="event-name">Event name*</label><br>
+                                                <input class="form-action rounded" type="text" min="0" max="75" style="width: 100%; height: 40px;" required>
+                                            </fieldset>
+                                            <fieldset class="mt-3">
+                                                <label for="timezone-offset">Time zone</label>
+                                                <select name="timezone_offset" id="timezone-offset" class="span5 rounded mt-2" style="width: 100%; height: 30px;" required>
+                                                    <option value="-12:00"></option>
+                                                    <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                                                    <option value="-10:00">(GMT -10:00) Hawaii</option>
+                                                    <option value="-09:50">(GMT -9:30) Taiohae</option>
+                                                    <option value="-09:00">(GMT -9:00) Alaska</option>
+                                                    <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                                                    <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                                                    <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                                                    <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                                                    <option value="-04:50">(GMT -4:30) Caracas</option>
+                                                    <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                                                    <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                                                    <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                                    <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                                                    <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                                                    <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                                                    <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                                    <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                                                    <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                                    <option value="+03:50">(GMT +3:30) Tehran</option>
+                                                    <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                                                    <option value="+04:50">(GMT +4:30) Kabul</option>
+                                                    <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                                    <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                                                    <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                                                </select>
+                                            </fieldset>
+                                            <fieldset class="mt-3 d-flex justify-content-start align-items-center">
+                                                <div style="width: 50%;">
+                                                    <label for="start-date">Start date</label><br>
+                                                    <input class="form-action rounded" type="date" style="width: 80%; height: 40px;" id="start-date" required>
+                                                </div>
+                                                <div style="width: 50%;">
+                                                    <label for="start-time">Start time</label><br>
+                                                    <input class="form-action rounded" type="time" style="width: 80%; height: 40px;" id="start-time" required>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="mt-3">
+                                                <label for="datecheckbox"><input class="form-action" type="checkbox"> Add end date and time</label>
+                                            </fieldset>
+                                            <fieldset class="mt-3 d-flex justify-content-start align-items-center">
+                                                <div style="width: 50%;">
+                                                    <label for="end-date">End date</label><br>
+                                                    <input class="form-action rounded" type="date" style="width: 80%; height: 40px;" id="end-date" required>
+                                                </div>
+                                                <div style="width: 50%;">
+                                                    <label for="end-time">Start time</label><br>
+                                                    <input class="form-action rounded" type="time" style="width: 80%; height: 40px;" id="end-time" required>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="mt-3">
+                                                <label for="event-description">Event description</label><br>
+                                                <textarea class="rounded" name="description" id="event-description" placeholder="Describe your event" style="width: 100%;"></textarea>
+                                            </fieldset>
+                                            <button class="rounded bg-info fs-5 fw-semibold border-0 shadow" type="submit" style="width: 50%; margin: 50px 0 0 30%; height: 40px; color: white;">Save Event</button>
+                                        </form>
+                                    </div>
+                                </div>       
+                                
+                                    
+                                
+                            </div>
+                            <div class="text-start">
+                                <p class="small-text fw-bold text-primary ms-3 hover-underline-blue">Followed Hashtags</p>
+                                <div class="py-2 px-3 hover-gray" style="margin-top: -8px;">
+                                    <a class="focus-underline-black hover-black text-muted text-decoration-none d-flex justify-content-start align-items-center" href="https://www.linkedin.com/events">
+                                        <i class="fa-solid fa-hashtag text-dark"></i>
+                                        <span class="fw-semibold ms-3" style="font-size: small;">datascience</span>
+                                    </a>
+                                </div>
+                                <div class="py-2 px-3 hover-gray"><a class="ps-5 py-1 hover-black text-black-50 fw-semibold text-decoration-none" href="https://www.linkedin.com/groups">See all</a></div>
+                            </div>   
+                        </div>
+                        <!-- Discover more -->
+                        <div class="text-center px-3 py-3 fw-semibold border-top border-tertiary hover-gray">
+                            <a href="https://www.linkedin.com/mynetwork/discover-hub/" class="text-decoration-none hover-black text-muted fs-6">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!-- Middle Column -->
+              <div class="col-12 col-md-8 col-lg-5 col-xl-6 middle-col" style="margin-left: -40px;">
+                <div class="col-12 rounded rounded-3">
+                    <div class="mt-0 shadow-sm px-2 py-2 rounded-3" style="background-color: white;">
+                        <div>
+                            <img class="rounded-circle event-image" src="Project images/John.jpg" alt="profile picture" style="width: 60px; height: 65px;">
+                            <button class="event-button rounded-pill py-2 outline-0 border border-1 fw-semibold hover-gray ps-2 text-start hover-black text-muted" style="width: 85%;" onclick="buttonFunction()">Start a post
+                                <!-- Pop-up for the above button --> 
+                            </button>
+                            <div class="eventPopup-shade position-fixed" style="display: none; width: 99vw; height: 100vh; z-index: 3; top: 0; left: 0; background-color: rgba(144, 144, 146,0.5);" id="middle-popup">
+                                <div class="pop-up-container pb-4 rounded border position-fixed border-tertiary shadow overflow-auto" id="" style="display: block; top: 15vh; width: 40vw; height: 80vh; z-index: 5; background-color: white; left: 30vw;">
+                                    <div class="d-flex p-3 justify-content-between align-items-center">
+                                        <p class="text-dark fs-4">Create an Event</p>
+                                        <button class="outline-0 border-0" style="margin-top: -15px;" onclick="closeMidFunction()"><i class="fa-solid fa-xmark"></i></button>
+                                    </div> 
+                                    <!-- Event popup picture container -->
+                                    <label for="eventImage-input" style="width: 100%; height: fit-content;" >
+                                        <img src="Project images/imageplaceholder.png" style="width: 100%; height: auto;" id="event-pic">
+                                    </label>
+                                    <input class="d-none" type="file" accept="image/jpeg, image/png, image/jpg image/webp" id="eventImage-input">
+                                    
+                                </div>  
+                            </div>    
+                    <!-- Media event article -->
+                    <div class="mt-2 d-flex justify-content-evenly align-items-center" style="flex-wrap: wrap;">
+                        <button class="d-flex px-2 py-2 justify-items-center align-items-center hover-gray outline-0 border-0" style="background: transparent;">
+                            <img src="Project images/gallery.jpeg" alt="" style="width: 20px;">
+                            <div class=" ms-2 fw-semibold text-muted" style="">Media</div>
+                        </button>
+                        <!-- Pop-up for above button -->
+                        <div class="eventPopup-shade position-fixed" style="display: none; width: 99vw; height: 100vh; z-index: 3; top: 0; left: 0; background-color: rgba(144, 144, 146,0.5);" id="event-popup">
+                            <div class="pop-up-container pb-4 rounded border position-fixed border-tertiary shadow overflow-auto" id="popup1" style="width: 40vw; height: 99vh; z-index: 5; background-color: white; left: 30vw;">
+                                <div class="d-flex p-3 justify-content-between align-items-center">
+                                    <p class="text-dark fs-4">Create an Event</p>
+                                    <button type="button" class="btn-close dark" data-bs-dismiss="pop-up-container" style="margin-top: -15px;" onclick="eventCloseFunction()"></button>
+                                </div>
+                                <label for="eventImage-input" style="width: 100%; height: fit-content;" >
+                                    <img src="Project images/imageplaceholder.png" style="width: 100%; height: auto;" id="event-pic">
+                                </label>
+                                <input class="d-none" type="file" accept="image/jpeg, image/png, image/jpg image/webp" id="eventImage-input">         
+                            </div>
+                        </div>    
+                       
+                        <button class="d-flex px-2 py-2 justify-items-center align-items-center hover-gray outline-0 border-0" style="background: transparent;">
+                            <img src="Project images/events.png" alt="" style="width: 20px;">
+                            <div class=" ms-2 fw-semibold text-muted" style="">Event</div>
+                        </button>
+                        <!-- Pop-up for the above button -->
+                        <div class="eventPopup-shade position-fixed" style="display: none; width: 99vw; height: 100vh; z-index: 3; top: 0; left: 0; background-color: rgba(144, 144, 146,0.5);" id="event-popup">
+                            <div class="pop-up-container pb-4 rounded border position-fixed border-tertiary shadow overflow-auto" id="popup1" style="width: 40vw; height: 99vh; z-index: 5; background-color: white; left: 30vw;">
+                                <div class="d-flex p-3 justify-content-between align-items-center">
+                                    <p class="text-dark fs-4">Create an Event</p>
+                                    <button type="button" class="btn-close dark" data-bs-dismiss="pop-up-container" style="margin-top: -15px;" onclick="eventCloseFunction()"></button>
+                                </div> 
+                                <label for="eventImage-input" style="width: 100%; height: fit-content;" >
+                                    <img src="Project images/imageplaceholder.png" style="width: 100%; height: auto;" id="event-pic">
+                                </label>
+                                <input class="d-none" type="file" accept="image/jpeg, image/png, image/jpg image/webp" id="eventImage-input">
+                            </div>
+                        </div>    
+                        <button class="d-flex px-2 py-2 justify-items-center align-items-center hover-gray outline-0 border-0" style="background: transparent;" onclick="plusFunction()">
+                            <img src="Project images/article.png" alt="" style="width: 20px;">
+                            <div class=" ms-2 fw-semibold text-muted" style="">Write an article</div>
+                        </button>
+                        <!-- Pop-up for the above button -->
+                        <div class="eventPopup-shade position-fixed" style="display: none; width: 99vw; height: 100vh; z-index: 3; top: 0; left: 0; background-color: rgba(144, 144, 146,0.5);" id="event-popup">
+                            <div class="pop-up-container pb-4 rounded border position-fixed border-tertiary shadow overflow-auto" id="popup1" style="width: 40vw; height: 99vh; z-index: 5; background-color: white; left: 30vw;">
+                                <div class="d-flex p-3 justify-content-between align-items-center">
+                                    <p class="text-dark fs-4">Create an Event</p>
+                                    <button type="button" class="btn-close dark" data-bs-dismiss="pop-up-container" style="margin-top: -15px;" onclick="eventCloseFunction()"></button>
+                                </div> 
+                                <label for="eventImage-input" style="width: 100%; height: fit-content;" >
+                                    <img src="Project images/imageplaceholder.png" style="width: 100%; height: auto;" id="event-pic">
+                                </label>
+                                <input class="d-none" type="file" accept="image/jpeg, image/png, image/jpg image/webp" id="eventImage-input">
+                            </div>
+                        </div>    
+                    </div>
+               </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div class="" style="width: 80%; height: 1px; background-color: rgb(148, 147, 147);"></div>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: transparent">
+                      <span class="small-text">sort by:</span> <strong>top</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" active>Top</a></li>
+                      <li><a class="dropdown-item" href="#">Recent</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <!-- News and posts -->
+             <!-- News and posts 1 -->
+            <div class="mt-3 shadow-sm rounded-3" style="background-color: white;">
+                <!-- News and reposts top div -->
+                <div class="d-flex justify-content-between align-items-start px-3 pt-4">
+                    <!-- image of friend and link to his bio -->
+                    <div class="d-flex justify-content-start align-items-start w-75">
+                        <img class="rounded-circle" src="Project images/John new.jpg" alt="" style="width: 50px; height: 40px;">
+                        <div class="text-start ms-2">
+                            <p class="text-decoration-none fs-6 fw-semibold"><a class="hover-underline-dark text-decoration-none hover-text-blue text-dark" href="https://www.linkedin.com/in/oluwatoyinifesanya/">Toyin Ifesanya <span class="text-black-50 small-text">.1st</span></a></p>
+                            <div class="" style="white-space: no-wrap; margin-top: -10px; height: 20px; text-overflow: ellipsis; overflow: hidden;"><p class="text-black-50 small-text" style="text-overflow: ellipsis;">Tech Industry Leader | Most Inspiring Woman In Tech 2023 | Advocate for Diversity and Inclusion|Founder Aspiring Women leaders in TechTech Industry Leader | Most Inspiring Woman In Tech 2023 | Advocate for Diversity and Inclusion|Founder Aspiring Women leaders in Tech
+                            58m • </p></div>
+                        </div>
+                    </div>
+                <!-- Ellipses and close button -->
+                    <div>
+                        <button type="button" class="followed-ellipses rounded-circle position-relative outline-0 p-2 hover-gray" style="background: transparent; border: none;"><i class="fa-solid fa-ellipsis text-muted"></i>
+                        <!-- Above ellipses' pop-up -->
+                         <div class="followed-ellipses-popup rounded py-3 position-absolute shadow-sm d-none top-100 end-0" style="background-color: white; width: 300px;">
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <div>Save</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-link"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-anchor"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-eye-slash"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                                <div>Unfollow</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-flag"></i>
+                                <div>Report post</div>
+                            </div>
+                         </div>
+                        </button>
+                        <button type="button" class="p-2 rounded-circle outline-0 border-0 hover-gray bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+            
+             <!-- Posts div -->
+              <div>
+                <img src="https://media.licdn.com/dms/image/D4D22AQHKCBlvEnwgiA/feedshare-shrink_800/0/1721635774408?e=1725494400&v=beta&t=v-phkNkcqTNtWyQTo-92w9XU77Yngtw-dczxXA-JbaQ" alt="" style="width: 100%;">
+              </div>
+              <!-- Carousel start-->
+              <div id="carouselExample" class="carousel carousel-dark slide mt-3 px-4" style="width: 100%;">
+                <div class="carousel-inner px-3 mx-2" style="height: 35px; width: 100%;">
+                  <div class="carousel-item active" style="width: fit-content;">
+                    <div class="px-3 py-1 me-5" style="border-radius: 15px 15px 0 15px; background-color: rgb(234,230,223); height: 100%;">
+                        <a href="transcorp.com" class="text-dark text-decoration-none tex-dark d-flex align-items-center">
+                            <img src="Project images/star-removebg-preview.png" alt="" style="width: 10px; margin-bottom: 15px;">
+                            <p class="ms-3">Find the best opportunities at Transcorp</p>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="width: fit-content;">
+                    <div class="px-3 py-1 ms-5" style="border-radius: 15px 15px 0 15px; background-color: rgb(234,230,223); height: 100%;">
+                        <a href="transcorp.com" class="text-dark text-decoration-none tex-dark d-flex align-items-center">
+                            <img src="Project images/star-removebg-preview.png" alt="" style="width: 10px; margin-bottom: 15px;">
+                            <p class="ms-3">Find the best opportunities at Transcorp</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                <!-- Carousel end -->
+                 <!-- Last div of the posts -->
+                <div class="px-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="micro-small-icon" src="Project images/like-icon.jpg" alt="like icon">
+                            <img class="very-small-icon ver-small-a" src="Project images/fav-icon.png" alt="heart in a red circle">
+                            <img class="very-small-icon very-small-b" src="Project images/hot-icon.jpg" alt="fire symbol">
+                            <p class="text-black-50 ms-2" style="font-size: x-small; margin-top: 20px;">17,416</p>
+                        </div>
+                        <div>
+                            <p class="text-black-50 ms-2" style="font-size: small; margin-top: 20px;">5 comments</p>
+                        </div>
+                    </div>
+                    <div style="width: 100%; margin-top: -25px;">
+                        <hr>
+                    </div>
+                    <div class="px-3 d-flex justify-content-evenly align-items-center" style="margin-top: -15px; width: 100%;" >
+                        <button class="hover-like outline-0 border-0 bg-transparent hover-black px-3 py-2 hover-gray d-flex justify-content-center align-items-center position-relative" style="color: rgb(36, 34, 34);">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <div class="ms-2 fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="color: gray;">Like</div>
+                            <!-- Post-like popup -->
+                            <div class="like-popups d-none justify-content-center align-items-center position-absolute rounded-3 shadow py-3 px-3 start-0" style="bottom: 105%; background-color: white; gap: 15px;">
+                                <i class="fa-regular fa-thumbs-up text-primary"></i>
+                                <i class="fa-solid fa-hands-clapping text-success"></i>
+                                <i class="fa-solid fa-hand-holding-heart text-success" style="--bs-text-opacity: .5;"></i>
+                                <i class="fa-solid fa-heart text-danger"></i>
+                                <i class="fa-solid fa-lightbulb text-warning"></i>
+                                <i class="fa-solid fa-face-smile text-info"></i>
+                            </div>
+                        </button>
+                        <div class="hover-like-other px-3 py-2 hover-gray d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-comment"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Comment</div>
+                        </div>
+                        <button class="hover-like-other retweet-button px-3 py-2 position-relative hover-deep-gray d-flex justify-content-center align-items-center outline-0 border-0 bg-transparent" style="">
+                            <i class="fa-solid fa-retweet"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Repost</div>
+                            <div class="retweet-popup justify-content-center align-items-center position-absolute rounded-3 shadow py-3" style="z-index: 10; display: none; bottom: -120px; right: 20px; background-color: white; gap: 15px; width: 400px;">
+                                <div class="d-flex flex-row justify-content-start align-items-center gap-3 px-3 py-2 hover-light-gray">
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                    <div class="text-start">
+                                        <div class="fw-bold small-text text-muted">Repost with your thoughts</div>
+                                        <div class="small-text text-muted">Create a new post with Chiebuka’s post attached</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center gap-3 mt-2 px-3 py-2 hover-light-gray">
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                    <div class="text-start">
+                                        <div class="fw-bold small-text text-muted">Repost with your thoughts</div>
+                                        <div class="small-text text-muted">Create a new post with Chiebuka’s post attached</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="hover-like-other px-3 py-2 hover-deep-gray d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Send</div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+            <div class="mt-2 py-2 shadow-sm rounded-3" style="background-color: white;">
+                <!-- News and reposts 2 -->
+                 <!-- News and repost 2 top div -->
+                 <div class="d-flex justify-content-between align-items-center px-3 py-1 border-bottom border-tertiary">
+                    <!-- image of friend and link to his bio -->
+                    <div class="d-flex justify-content-start align-items-start w-75">
+                        <img class="rounded-circle" src="Project images/John new.jpg" alt="" style="width: 30px; height: 25px;">
+                        <div class="ms-2 text-decoration-none fs-6 fw-semibold"><a class="hover-underline-blue text-decoration-none hover-text-blue text-dark" href="https://www.linkedin.com/in/oluwatoyinifesanya/" style="font-size: small;">Pius Edu <span class="text-black-50" style="font-size: x-small;">commented on this post</span></a></div>
+                    </div>
+                    <!-- Ellipses and cancel -->
+                    <div>
+                        <button type="button" class="followed-ellipses rounded-circle position-relative outline-0 p-2 me-2 hover-deep-gray" style="background: transparent; border: none;"><i class="fa-solid fa-ellipsis text-muted"></i>
+                        <!-- Above ellipses' pop-up -->
+                         <div class="followed-ellipses-popup rounded position-absolute shadow-sm d-none py-3 top-100 end-0" style="background-color: white; width: 300px;">
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <div>Save</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-link"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-anchor"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-eye-slash"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                                <div>Unfollow</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-flag"></i>
+                                <div>Report post</div>
+                            </div>
+                         </div>
+                        </button>
+                        <button type="button" class= "outline-0 border-0 hover-deep-gray rounded-circle p-2" style="background-color: white;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <!-- Ellipses and button end -->
+                </div>
+                <div class="d-flex justify-content-between align-items-center px-3 pt-1">
+                    <!-- image of friend and link to his bio -->
+                    <div class="d-flex justify-content-start align-items-start w-75">
+                        <img class="rounded-circle" src="Project images/John new.jpg" alt="" style="width: 50px; height: 40px;">
+                        <div class="text-start ms-2">
+                            <p class="text-decoration-none fs-6 fw-semibold"><a class="hover-underline-dark text-decoration-none hover-text-blue text-dark" href="https://www.linkedin.com/in/oluwatoyinifesanya/">Toyin Ifesanya <span class="text-black-50 small-text">.1st</span></a></p>
+                            <div class="" style="white-space: no-wrap; margin-top: -10px; height: 20px; text-overflow: ellipsis; overflow: hidden;"><p class="text-black-50 small-text" style="text-overflow: ellipsis;">Tech Industry Leader | Most Inspiring Woman In Tech 2023 | Advocate for Diversity and Inclusion|Founder Aspiring Women leaders in TechTech Industry Leader | Most Inspiring Woman In Tech 2023 | Advocate for Diversity and Inclusion|Founder Aspiring Women leaders in Tech
+                            58m • </p></div>
+                        </div>
+                    </div>
+                <!-- Follow-->
+                    <div class="p-2 hover-light-blue rounded-2">
+                        <a href="linkedin.com" class="d-flex text-decoration-none justify-content-center align-items-center fs-5"><i class="fa-solid fa-plus text-primary"></i>
+                        <div class="ms-2 text-primary fs-6 fw-semibold" style="">Follow</div></a>
+                    </div>    
+            </div>
+             <!-- Posts div -->
+              <div class="mt-2">
+                <video src="Project images/Learn CSS animations in 15 minutes! 🎬.mp4" controls style="width: 100%;"></video>
+              </div>
+              <!-- Carousel start-->
+              <div id="carouselExample" class="carousel carousel-dark slide mt-3 px-4" style="width: 100%;">
+                <div class="carousel-inner px-3 mx-2" style="height: 35px; width: 100%;">
+                  <div class="carousel-item active" style="width: fit-content;">
+                    <div class="px-3 py-1 me-5" style="border-radius: 15px 15px 0 15px; background-color: rgb(234,230,223); height: 100%;">
+                        <a href="transcorp.com" class="text-dark text-decoration-none tex-dark d-flex align-items-center">
+                            <img src="Project images/star-removebg-preview.png" alt="" style="width: 10px; margin-bottom: 15px;">
+                            <p class="ms-3">Find the best opportunities at Transcorp</p>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="width: fit-content;">
+                    <div class="px-3 py-1 ms-5" style="border-radius: 15px 15px 0 15px; background-color: rgb(234,230,223); height: 100%;">
+                        <a href="transcorp.com" class="text-dark text-decoration-none tex-dark d-flex align-items-center">
+                            <img src="Project images/star-removebg-preview.png" alt="" style="width: 10px; margin-bottom: 15px;">
+                            <p class="ms-3">Find the best opportunities at Transcorp</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                <!-- Carousel end -->
+                 <!-- Last div of the posts -->
+                <div class="px-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="micro-small-icon" src="Project images/like-icon.jpg" alt="like icon">
+                            <img class="very-small-icon ver-small-a" src="Project images/fav-icon.png" alt="heart in a red circle">
+                            <img class="very-small-icon very-small-b" src="Project images/hot-icon.jpg" alt="fire symbol">
+                            <p class="text-black-50 ms-2" style="font-size: x-small; margin-top: 20px;">17,416</p>
+                        </div>
+                        <div>
+                            <p class="text-black-50 ms-2" style="font-size: small; margin-top: 20px;">5 comments</p>
+                        </div>
+                    </div>
+                    <div style="width: 100%; margin-top: -25px;">
+                        <hr>
+                    </div>
+                    <div class="px-3 d-flex justify-content-evenly align-items-center" style="margin-top: -15px; width: 100%;">
+                        <div class="hover-like px-4 py-2 hover-gray d-flex justify-content-center align-items-center position-relative">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Like</div>
+                            <!-- Post-like popup -->
+                            <div class="like-popups d-none justify-content-center align-items-center position-absolute rounded-3 shadow py-3 px-3 bottom-100 start-0" style="background-color: white; gap: 15px;">
+                                <i class="fa-regular fa-thumbs-up text-primary"></i>
+                                <i class="fa-solid fa-hands-clapping text-success"></i>
+                                <i class="fa-solid fa-hand-holding-heart text-success" style="--bs-text-opacity: .5;"></i>
+                                <i class="fa-solid fa-heart text-danger"></i>
+                                <i class="fa-solid fa-lightbulb text-warning"></i>
+                                <i class="fa-solid fa-face-smile text-info"></i>
+                            </div>
+                        </div>
+                        <div class="px-3 py-2 hover-like-other hover-gray d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-comment"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Comment</div>
+                        </div>
+                        <button class="hover-like-other retweet-button px-3 py-2 position-relative hover-deep-gray d-flex justify-content-center align-items-center outline-0 border-0 bg-transparent" style="">
+                            <i class="fa-solid fa-retweet"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Repost</div>
+                            <div class="retweet-popup justify-content-center align-items-center position-absolute rounded-3 shadow py-3" style="z-index: 10; display: none; bottom: -120px; right: 20px; background-color: white; gap: 15px; width: 400px;">
+                                <div class="d-flex flex-row justify-content-start align-items-center gap-3 px-3 py-2 hover-light-gray">
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                    <div class="text-start">
+                                        <div class="fw-bold small-text text-muted">Repost with your thoughts</div>
+                                        <div class="small-text text-muted">Create a new post with Chiebuka’s post attached</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center gap-3 mt-2 px-3 py-2 hover-light-gray">
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                    <div class="text-start">
+                                        <div class="fw-bold small-text text-muted">Repost with your thoughts</div>
+                                        <div class="small-text text-muted">Create a new post with Chiebuka’s post attached</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="hover-like-other px-3 py-2 hover-deep-gray d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Send</div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+            <!-- Job finder expert -->
+            <div class="px-4 py-3 mt-2 rounded-3 shadow-sm" style="background-color: white;">
+                <!-- top div -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-muted fw-semibold fs-6">Job search smarter</div>
+                    <!-- Ellipses -->
+                    <button type="button" class="followed-ellipses rounded-circle position-relative outline-0 p-2 me-2 hover-deep-gray" style="background: transparent; border: none;"><i class="fa-solid fa-ellipsis text-muted"></i>
+                        <!-- Above ellipses' pop-up -->
+                         <div class="text-center px-3 py-3 followed-ellipses-popup rounded position-absolute shadow d-none top-100 end-0" style="background-color: white; width: 300px;">
+                            This section does not apply to me
+                         </div>
+                        </button>
+                </div>
+                <!-- Lower div -->
+                <div class="d-flex justify-content-between align-items center">
+                    <!-- Lower div left -->
+                    <div style="width: 70%;" class="d-flex flex-column align-items-start justify-items-center">
+                        <p style="font-size: small;">John, Premium can boost your job search</p>
+                        <div class="d-sm-flex d-none align-items-center gap-2">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="Project images/apple-removebg-preview.png" alt="" style="width: 18px; height: 15px;">
+                                <img class="rounded-circle" src="Project images/linkedin dark.webp" alt="" style="width: 18px; height: 15px;">
+                                <img class="rounded-circle" src="Project images/John new.jpg" alt="" style="width: 18px; height: 15px">
+                            </div>
+                            <p class="ms-1" style="width: 70%; text-align: left; font-size: medium; margin-top: 10px;">Dr Sunny Olukunle Phillips and millions more use Premium</p>
+                        </div>
+                        <button class="rounded-pill btn btn-md btn-primary fw-semibold">Find a job</button>
+                    </div>
+                    <div style="width: 30%;" class="d-none d-sm-block">
+                        <img class="rounded-circle" src="Project images/job search.avif" alt="" style="width: 80%;">
+                    </div>
+                </div>
+            </div>
+             <!-- News and posts 3 -->
+             <div class="mt-3 shadow-sm rounded-3" style="background-color: white;">
+                <!-- News and reposts top div -->
+                <div class="d-flex justify-content-between align-items-start px-3 pt-4">
+                    <!-- image of friend and link to his bio -->
+                    <div class="d-flex justify-content-start align-items-start w-75">
+                        <img class="rounded-circle" src="Project images/John new.jpg" alt="" style="width: 50px; height: 40px;">
+                        <div class="text-start ms-2">
+                            <p class="text-decoration-none fs-6 fw-semibold"><a class="hover-underline-dark text-decoration-none hover-text-blue text-dark" href="https://www.linkedin.com/in/oluwatoyinifesanya/">Toyin Ifesanya <span class="text-black-50 small-text">.1st</span></a></p>
+                            <div class="" style="white-space: no-wrap; margin-top: -10px; height: 20px; text-overflow: ellipsis; overflow: hidden;"><p class="text-black-50 small-text" style="text-overflow: ellipsis;">Tech Industry Leader | Most Inspiring Woman In Tech 2023 | Advocate for Diversity and Inclusion|Founder Aspiring Women leaders in TechTech Industry Leader | Most Inspiring Woman In Tech 2023 | Advocate for Diversity and Inclusion|Founder Aspiring Women leaders in Tech
+                            58m • </p></div>
+                        </div>
+                    </div>
+                <!-- Ellipses and close button -->
+                    <div>
+                        <button type="button" class="followed-ellipses rounded-circle position-relative outline-0 p-2 hover-gray" style="background: transparent; border: none;"><i class="fa-solid fa-ellipsis text-muted"></i>
+                        <!-- Above ellipses' pop-up -->
+                         <div class="followed-ellipses-popup rounded py-3 position-absolute shadow-sm d-none top-100 end-0" style="background-color: white; width: 300px;">
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <div>Save</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-link"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-anchor"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-eye-slash"></i>
+                                <div>Copy link to post</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                                <div>Unfollow</div>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center text-dark fw-bold px-4 py-2 hover-deep-gray gap-2">
+                                <i class="fa-solid fa-flag"></i>
+                                <div>Report post</div>
+                            </div>
+                         </div>
+                        </button>
+                        <button type="button" class="p-2 rounded-circle outline-0 border-0 hover-gray bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+            
+             <!-- Posts div -->
+              <div>
+                <img src="https://media.licdn.com/dms/image/D4D22AQHKCBlvEnwgiA/feedshare-shrink_800/0/1721635774408?e=1725494400&v=beta&t=v-phkNkcqTNtWyQTo-92w9XU77Yngtw-dczxXA-JbaQ" alt="" style="width: 100%;">
+              </div>
+              <!-- Carousel start-->
+              <div id="carouselExample" class="carousel carousel-dark slide mt-3 px-4" style="width: 100%;">
+                <div class="carousel-inner px-3 mx-2" style="height: 35px; width: 100%;">
+                  <div class="carousel-item active" style="width: fit-content;">
+                    <div class="px-3 py-1 me-5" style="border-radius: 15px 15px 0 15px; background-color: rgb(234,230,223); height: 100%;">
+                        <a href="transcorp.com" class="text-dark text-decoration-none tex-dark d-flex align-items-center">
+                            <img src="Project images/star-removebg-preview.png" alt="" style="width: 10px; margin-bottom: 15px;">
+                            <p class="ms-3">Find the best opportunities at Transcorp</p>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="width: fit-content;">
+                    <div class="px-3 py-1 ms-5" style="border-radius: 15px 15px 0 15px; background-color: rgb(234,230,223); height: 100%;">
+                        <a href="transcorp.com" class="text-dark text-decoration-none tex-dark d-flex align-items-center">
+                            <img src="Project images/star-removebg-preview.png" alt="" style="width: 10px; margin-bottom: 15px;">
+                            <p class="ms-3">Find the best opportunities at Transcorp</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                <!-- Carousel end -->
+                 <!-- Last div of the posts -->
+                <div class="px-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="micro-small-icon" src="Project images/like-icon.jpg" alt="like icon">
+                            <img class="very-small-icon ver-small-a" src="Project images/fav-icon.png" alt="heart in a red circle">
+                            <img class="very-small-icon very-small-b" src="Project images/hot-icon.jpg" alt="fire symbol">
+                            <p class="text-black-50 ms-2" style="font-size: x-small; margin-top: 20px;">17,416</p>
+                        </div>
+                        <div>
+                            <p class="text-black-50 ms-2" style="font-size: small; margin-top: 20px;">5 comments</p>
+                        </div>
+                    </div>
+                    <div style="width: 100%; margin-top: -25px;">
+                        <hr>
+                    </div>
+                    <div class="px-3 d-flex justify-content-evenly align-items-center" style="margin-top: -15px; width: 100%;">
+                        <button class="hover-like outline-0 border-0 bg-transparent hover-black px-3 py-2 hover-gray d-flex justify-content-center align-items-center position-relative" style="color: rgb(36, 34, 34);">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <div class="ms-2 fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="color: gray;">Like</div>
+                            <!-- Post-like popup -->
+                            <div class="like-popups d-none justify-content-center align-items-center position-absolute rounded-3 shadow py-3 px-3 start-0" style="bottom: 105%; background-color: white; gap: 15px;">
+                                <i class="fa-regular fa-thumbs-up text-primary"></i>
+                                <i class="fa-solid fa-hands-clapping text-success"></i>
+                                <i class="fa-solid fa-hand-holding-heart text-success" style="--bs-text-opacity: .5;"></i>
+                                <i class="fa-solid fa-heart text-danger"></i>
+                                <i class="fa-solid fa-lightbulb text-warning"></i>
+                                <i class="fa-solid fa-face-smile text-info"></i>
+                            </div>
+                        </button>
+                        <div class="hover-like-other px-3 py-2 hover-gray d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-comment"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Comment</div>
+                        </div>
+                        <button class="hover-like-other retweet-button px-3 py-2 position-relative hover-deep-gray d-flex justify-content-center align-items-center outline-0 border-0 bg-transparent" style="">
+                            <i class="fa-solid fa-retweet"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Repost</div>
+                            <div class="retweet-popup justify-content-center align-items-center position-absolute rounded-3 shadow py-3" style="z-index: 10; display: none; bottom: -120px; right: 20px; background-color: white; gap: 15px; width: 400px;">
+                                <div class="d-flex flex-row justify-content-start align-items-center gap-3 px-3 py-2 hover-light-gray">
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                    <div class="text-start">
+                                        <div class="fw-bold small-text text-muted">Repost with your thoughts</div>
+                                        <div class="small-text text-muted">Create a new post with Chiebuka’s post attached</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center gap-3 mt-2 px-3 py-2 hover-light-gray">
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                    <div class="text-start">
+                                        <div class="fw-bold small-text text-muted">Repost with your thoughts</div>
+                                        <div class="small-text text-muted">Create a new post with Chiebuka’s post attached</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="hover-like-other px-3 py-2 hover-deep-gray d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <div class="ms-2 text-muted fw-semibold d-none d-sm-block d-lg-none d-xl-block" style="">Send</div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+              <!-- Right Column -->
+               <div class="col-4 d-none d-lg-block" style="width: 320px;">
+                    <!-- First section -->
+                    <div class="rounded-3 px-3 py-3 shadow-sm" style="background-color: white;">
+                        <!-- First-div -->
+                         <div class="d-flex justify-content-between align-items-start">
+                            <p class="text-muted fw-bold fs-6">Add to your feed</p>
+                            <button class="mt-1 info-popup-button position-relative border-0 outline-0" style="background: transparent;"><i class="fa-solid fa-circle-info"></i>
+                                <!-- Hidden div in the circled-info button -->
+                                <div class="info-popup-div position-absolute gap-2 px-3 py-2 shadow rounded-2 info-popup end-100 d-none justify-content-beween align-items start" style="background-color: white; width:fit-content; top: 5px;">
+                                    <p class="small-text" style="width: 250px; text-align: left;">Follow things that interest you to personalize your feed. <a href="#" class="text-decoration-none hover-underline-blue fs-6">Learn more.</a></p>
+                                    <a class="info-close text-dark" href=""><i class="fa-solid fa-xmark"></i></a>
+                                </div>
+
+                            </button>
+                         </div>
+                         <div>
+                            <div class="d-flex justify-content-start align-items-start gap-1" style="width: 90%;">
+                                <img class="rounded-circle" style="width: 50px;" src="https://media.licdn.com/dms/image/C4E0BAQHwNVBRo2PaXw/company-logo_100_100/0/1645200535183/flutterwave_logo?e=1730937600&v=beta&t=-edikGQYV8Ghz2ocDGI25lU5vSh9_UkU8jPTv-Hdi9I" alt="">
+                                <div class="d-flex flex-column justify-content-start align-items-start">
+                                    <p class="text-muted fw-bold fs-6">Flutterwave</p>
+                                    <span class="small-text text-black-50" style="margin-top: -15px;">Company .Financial Services</span>
+                                    <a class="mt-1 btn btn-md btn-light rounded-pill hover-deep-gray hover-border-black text-decoration-none px-3 py-1 fs-6 fw-bold border border-dark" href="">+ follow</a>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex justify-content-start align-items-start gap-1" style="width: 90%;">
+                                <img class="rounded-circle" style="width: 50px;" src="https://media.licdn.com/dms/image/D4D03AQEQBNCV5aqDKw/profile-displayphoto-shrink_100_100/0/1694232358311?e=1728518400&v=beta&t=qPpFQWzV-R3hdSc6sqGS2oa3hgIr1dkABo791w9wP3Y" alt="">
+                                <div class="d-flex flex-column justify-content-start align-items-start">
+                                    <p class="text-muted fw-bold fs-6">Ugochukwu Madu</p>
+                                    <span class="small-text text-black-50" style="margin-top: -15px;">Company .Financial Services</span>
+                                    <a class="mt-1 btn btn-md btn-light rounded-pill hover-deep-gray hover-border-black text-decoration-none px-3 py-1 fs-6 fw-bold border border-dark" href="">+ follow</a>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex justify-content-start align-items-start gap-1" style="width: 90%;">
+                                <img class="rounded-circle" style="width: 50px;" src="https://media.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=1730937600&v=beta&t=8hnJ1JMrlbXAuFkKxLUCMN4EeMpNjmA1MMt6BzHyaPY" alt="">
+                                <div class="d-flex flex-column justify-content-start align-items-start">
+                                    <p class="text-muted fw-bold fs-6">Flutterwave</p>
+                                    <span class="small-text text-black-50" style="margin-top: -15px;">Company .Financial Services</span>
+                                    <a class="mt-1 btn btn-md btn-light rounded-pill hover-deep-gray hover-border-black text-decoration-none px-3 py-1 fs-6 fw-bold border border-dark" href="">+ follow</a>
+                                </div>
+                            </div>
+                        
+                                <a class="mt-3 d-flex justify-content-center gap-2 rounded-2 px-2 hover-gray text-decoration-none text-muted fs-6" href="https://www.linkedin.com/mynetwork/discover-hub/" style="height: 25px; width: fit-content;">
+                                    <p class="fw-semibold" style="font-size: small;">View all recommendations</p>
+                                    <i class="fa-solid fa-arrow-right" style="margin-top: 3px;"></i></a>
+                    
+                         </div>
+                    </div>
+                    <!-- Second section -->
+                     <div class=" mt-3 position-sticky" style="top: 80px;">
+                        <div class="px-3 shadow-sm py-3 rounded-3" style="background-color: white;">
+                        <div class="d-flex justify-content-end gap-1 align-items-center text-small">
+                            <span class="small-text">Ad</span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="text-center">
+                            <p style="font-size: x-small;">John, restart your Premium free trial today!</p>
+                            <div class="my-2">
+                            <img class="rounded-circle me-2" src="https://media.licdn.com/dms/image/C4D03AQFDXD9RYljv0Q/profile-displayphoto-shrink_100_100/0/1626860209856?e=1728518400&v=beta&t=Rvcs6d5ICeWFxlsyu_kGsscQ4IXW01ziOTQ5Hs1Uz-U" alt="">
+                            <img class="" src="https://media.licdn.com/dms/image/C560EAQGQsEWvm9cXww/rightRail-logo-shrink_200_200/0/1631010603947?e=1723413600&v=beta&t=4pe7nwBm1G--tCLFF_1ycIh7gvDReLx7ma3RbDoiflc" alt="">
+                            </div>
+                            <p class="text-muted fw-semibold" style="text-align: center;"> See who has viewed your profile in the last 365 days</p>
+                            <a class="sticky-right btn btn-md btn-outline-primary rounded-pill fw-semibold fs-6" href="https://www.linkedin.com/premium/products/?intentType=GROW_NETWORK&type=premium&src=li-dynamic&trk=dynamic_ad_mktg_gsub_ha_c_PREMIUM_C_GS_DA_GLOBAL_EN_Reactivate_1074_ACCN_V7_May2023&upsellOrderOrigin=dynamic_ad_mktg_gsub_ha_c_PREMIUM_C_GS_DA_GLOBAL_EN_Reactivate_1074_ACCN_V7_May2023&mcid=7064303216540155906&utype=network&li_fat_id=b2c5704c-550d-41bc-8f70-8a09263ee051">
+                                Restart trial
+                            </a>
+                        </div>
+                     </div>
+                     <div class="text-center mt-3 px-3">
+                        <div>
+                            <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">About</a>
+                            <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Accessibility</a> 
+                            <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Help Center</a>
+                            <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Privacy & Terms</a>
+                                <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Ad Choices</a>
+                                <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Advertising</a>
+                                
+                                <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Business Services</a>
+                                <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Get the LinkedIn app</a>
+                                <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">More</a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-3">
+                            <img src="Project images/Linkedin-Logo-2048x1280-removebg-preview.png" alt="" style="width: 80px;">
+                            <span style="font-size: x-small;">LinkedIn Corporation &#169 2024</span>
+                        </div>
+                     </div>
+                </div>
+               </div>
+            </div>
+        </div>
+        <!-- Message drop down -->
+        <div class="accordion position-fixed d-none d-md-block" id="accordionPanelsStayOpenExample" style="width: 300px; bottom: 0vh; right: 0vw;">
+            <div class="accordion-item">
+              <div class="accordion-header position-relative" id="panelsStayOpen-headingOne" style="border-radius: 10px 10px 0 0;">
+                <div class="px-2 pt-2 pb-1 hover-light-blue border-bottom border-tertiary" style="border-radius: 10px 10px 0 0; background-color: rgb(34, 126, 247); display: flex; justify-content: space-between; align-items: center;">
+                    <div class="position-relative d-flex gap-2 justify-content-start align-items-center" style="flex-direction: row;">
+                        <img class="rounded-circle" src="Project images/John new.jpg" alt="" style="width: 35px; height: 30px;">
+                        <div class="fw-semibold" style="font-size: small; color: white;">Messaging</div>
+                    </div>
+                    <div class="gap-1" style="display: flex; justify-content: start; align-items: center;">
+                        <button class="accordion-but button-show position-relative p-2 rounded-circle outline-0 border-0 hover-transparent-blue" style="background: transparent;">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <div class="show-focus position-absolute rounded-2 shadow" style="background-color: white; width: 250px; bottom: -150px; right: 0; display: none; z-index: 20;">
+                                <div class="py-2 px-3 hover-gray fw-semibold text-start"><a class="text-black-50 text-decoration-none" href="#">Manage Conversations</a></div>
+                                <div class="py-2 px-3 hover-gray fw-semibold text-start"><a class="text-black-50 text-decoration-none" href="#">Messaging settings</a></div>
+                                <div class="py-2 px-3 hover-gray fw-semibold text-start"><a class="text-black-50 text-decoration-none" href="#">Set away message</a></div>
+                            </div>
+                        </button>
+                        <button class="accordion-but button-show p-2 rounded-circle outline-0 border-0 hover-transparent-blue" style="background: transparent;" onclick="myFunction()">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <div id="showme-onclick" class="py-2 show-focus border-tertiary position-absolute shadow-sm rounded-3 top-0" style="display: none; width: 400px; background-color: white; right: 300px;">
+                                <div class="d-flex p-2 border-bottom border-tertiary flex-row justify-content-between align-items-center">
+                                    <p class="fw-semibold text-dark" style="font-size: small;">New message</p>
+                                    <div class="d-flex flex-row justify-content-start align-items-center gap-2">
+                                        <a href="#" class="text-dark p-2 rounded-circle outline-0 border-0 hover-light-gray"><i class="fa-solid fa-down-left-and-up-right-to-center text-dark"></i></a>
+                                        <a href="#" class="text-dark p-2 rounded-circle outline-0 border-0 hover-light-gray" onclick="myFunction()"><i class="fa-solid fa-xmark text-dark"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <div class="accordion-but outline-0 border-0 position-relative accordion-arrow rounded-circle hover-transparent-blue p-1 bg-transparent" type="" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="width: 30px;height: 30px; background:transparent;">
+                                <button class="position-absolute acc-arrowup bg-transparent outline-0 border-0" style=""><i class="fa-solid fa-angle-up"></i></button><button class="position-absolute border-0 outline-0 hover-transparent-blue1 acc-arrowdown rounded-circle" style="width: 30px; height: 30px;"><i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" style="width: 100%; padding: 0;">
+                <div class="accordion-body" style="width: 100%; padding: 0;">
+                    <div class="mt-2 mx-3 px-2 py-1 d-flex flex-row gap-1 justify-content-between align-items-center" style="background-color: rgb(233, 244, 250);">
+                        <div class="d-flex flex-row gap-1 justify-content-start align-items-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" class="bg-transparent outline-0 border-0 " style="width: 70%; height: 80%;" placeholder="Search messages">
+                        </div>
+                        <button class="position-relative bg-transparent message-filter-focus outline-0 border-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-120v-240h80v80h320v80H520v80h-80Zm-320-80v-80h240v80H120Zm160-160v-80H120v-80h160v-80h80v240h-80Zm160-80v-80h400v80H440Zm160-160v-240h80v80h160v80H680v80h-80Zm-480-80v-80h400v80H120Z"/></svg>
+                            <div class="rounded-3 shadow-sm border border-tertiary position-absolute py-2 message-filter-popup" style="display: none; width: 200px; height: fit-content; top: 120%; right: 0; background-color: white;">
+                                <div class="hover-gray text-start px-3 py-2 mb-1 text-black-50">Unread</div>
+                                <div class="hover-gray text-start px-3 py-2 mb-1 text-black-50">Starred</div>
+                                <div class="hover-gray text-start px-3 py-2 mb-1 text-black-50">InMail</div>
+                                <div class="hover-gray text-start px-3 py-2 mb-1 text-black-50">My Connections</div>
+                                <div class="hover-gray text-start px-3 py-2 mb-1 text-black-50">Archived</div>
+                                <div class="hover-gray text-start px-3 py-2 mb-1 text-black-50">Spam</div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="mt-2 d-flex flex-row justify-content-start border-bottom border-tertiary">
+                        <button class="position-relative focused-green-button hover-gray text-center border-0 outline-0 fw-semibold hover-text-dark" style="width: 50%; height: 40px; color: rgb(100, 98, 98);">Focused
+                            
+                        </button>
+                        
+                        <button class="position-relative focused-green-button hover-gray text-center border-0 outline-0 fw-semibold hover-text-dark transition-button" style="width: 50%; height: 40px; color: rgb(100, 100, 100);">Other
+                            <div style="height: 50vh; overflow-y: auto; z-index: 10; top: 105%; width: 200%; right: -200%; background-color: white;" class="position-absolute transition-button-popup" id="transition-button-popup">
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                                    <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                                    <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                        <div class="overflow-hidden text-start" style="text-overflow: ellipsis; width: 70%;">
+                                            <div class="fw-bold" style="font-size: small;">Robin Hood</div>
+                                            <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                        </div>
+                                   
+                                        <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                            <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                            <div class="show-div text-end">
+                                                <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 4</div>
+                                                <div class="badge rounded-circle bg-primary">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div style="height: 50vh; overflow-y: auto;" class=>
+                        <div class="ps-2 d-flex gap-2 hover-gray active justify-content-start align-items-center hover-show-ellipse">
+                            <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                            <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                <div class="overflow-hidden" style="text-overflow: ellipsis; width: 70%;">
+                                    <div class="fw-bold" style="font-size: small;">Biodun Rabiu</div>
+                                    <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                </div>
+                           
+                                <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                    <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                    <div class="show-div text-end">
+                                        <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 25</div>
+                                        <div class="badge rounded-circle bg-primary">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps-2 d-flex gap-2 hover-gray justify-content-start align-items-center hover-show-ellipse">
+                            <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                            <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                <div class="overflow-hidden" style="text-overflow: ellipsis; width: 70%;">
+                                    <div class="fw-bold" style="font-size: small;">Biodun Rabiu</div>
+                                    <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                </div>
+                           
+                                <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                    <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                    <div class="show-div text-end">
+                                        <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 25</div>
+                                        <div class="badge rounded-circle bg-primary">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps-2 d-flex gap-2 hover-gray justify-content-start align-items-center hover-show-ellipse">
+                            <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                            <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                <div class="overflow-hidden" style="text-overflow: ellipsis; width: 70%;">
+                                    <div class="fw-bold" style="font-size: small;">Biodun Rabiu</div>
+                                    <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                </div>
+                           
+                                <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                    <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                    <div class="show-div text-end">
+                                        <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 25</div>
+                                        <div class="badge rounded-circle bg-primary">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps-2 d-flex gap-2 hover-gray justify-content-start align-items-center hover-show-ellipse">
+                            <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                            <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                <div class="overflow-hidden" style="text-overflow: ellipsis; width: 70%;">
+                                    <div class="fw-bold" style="font-size: small;">Biodun Rabiu</div>
+                                    <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                </div>
+                           
+                                <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                    <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                    <div class="show-div text-end">
+                                        <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 25</div>
+                                        <div class="badge rounded-circle bg-primary">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps-2 d-flex gap-2 hover-gray justify-content-start align-items-center hover-show-ellipse">
+                            <img src="Project images/John new.jpg" alt="" class="rounded-circle" style="width: 50px; height: 45px;">
+                            <div style="width: 75%;" class="py-2 border-bottom border-tertiary d-flex flex-row justify-content-between align-items-start">
+                                <div class="overflow-hidden" style="text-overflow: ellipsis; width: 70%;">
+                                    <div class="fw-bold" style="font-size: small;">Biodun Rabiu</div>
+                                    <div class="small-text" style="width: 150%; text-overflow: ellipsis;"><span class="fw-semibold">Linked in offer</span> Hi there, John my name is Biodun, I have an offer for you</div>
+                                </div>
+                           
+                                <div style="width: 25%;" class="d-flex flex-column justify-content-start align-items-end">
+                                    <i class="fa-solid fa-ellipsis" style="display: none;"></i>
+                                    <div class="show-div text-end">
+                                        <div class="fw-semibold mb-2" style="font-size: small; width: 100%;">Aug 25</div>
+                                        <div class="badge rounded-circle bg-primary">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="height: 50vh; overflow-y: auto;"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+     </main>
+
+     <script>
+    function myFunction() {
+  var x = document.getElementById("showme-onclick");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction1() {
+  var x = document.getElementById("showme-onclick1");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("showme-onclick2");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+function nodisplay() {
+  var x = document.getElementById("navno-display");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<!-- Plus popup script -->
+<script>
+    function plusFunction() {
+  var x = document.getElementById("event-popup");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<!-- Event close button script -->
+<script>
+    function eventCloseFunction() {
+  var x = document.getElementById("event-popup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    }
+
+    function buttonFunction() {
+  var x = document.getElementById("middle-popup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    }
+
+    function closeMidFunction() {
+  var x = document.getElementById("middle-popup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    }
+</script>
+
+<script>
+let eventPic = document.getElementById("event-pic")
+let inputFile = document.getElementById("eventImage-input")
+
+inputFile.onchange = function(){
+    eventPic.src = URL.createObjectURL(inputFile.files[0]);
+}
+</script>
+
+</body>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin: Log In or Sign Up</title>
+    <link rel="icon" type="media/x-icon" href="Project images/linkedin_image-removebg-preview.png">
+    <script src="https://kit.fontawesome.com/0271217e1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="landingpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="landingpage.js"></script>
+</head>
+<body>
+    <div class="container-fluid container-xl mt-1">
+        <!-- The header consists of the logos and navbar -->
+         <!-- First Header -->
+        <div class="header">
+            <nav class="my-1 navbar d-flex justify-content-between align-items-center">
+                <!-- Image -->
+                <div class="d-flex">
+                    <div class="d-block d-md-none">
+                        <a href="#"><img src="Project images/linkedinsmall-removebg-preview.png" alt="Small-logo" class="logo-alt" style="width: auto; height: 25px;"></a>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <a href="#"><img src="Project images/Linkedin-Logo-2048x1280-removebg-preview.png" alt="LinkedIn logo" style="min-width: 100px; height: auto; width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column-reverse flex-md-row justify-content-start justify-content-md-end gap-2 gap-md-0 align-items-end align-items-md-center">
+                    <!-- Nav -icons -->
+                    <div class="scroll">
+                        <ul class="navbar-nav d-flex flex-row justify-content-evenly justify-content-md-end align-items-end p-3 p-md-2" style="gap: 45px; width: 550px; margin-left: auto;">
+                            <li class="nav-item nav-icon">
+                                <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 17" focusable="false" class="lazy-loaded" aria-busy="false">
+                                    <path d="m11 9.5h5v1h-5v-1zm5-5h-12v3h12v-3zm-5 8h5v-1h-5v1zm9-12v13c0 1.657-1.343 3-3 3h-14c-1.657 0-3-1.343-3-3v-13h20zm-2 2h-16v11c0 0.552 0.449 1 1 1h14c0.551 0 1-0.448 1-1v-11zm-9 7h-5v3h5v-3z" fill="currentColor" fill-opacity=".9"></path>
+                                    </svg><span>Article</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-icon">
+                                <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                                    <path d="M9 14v6H0v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3Zm5.5-3c1.9 0 3.5-1.6 3.5-3.5S16.4 4 14.5 4 11 5.6 11 7.5s1.6 3.5 3.5 3.5Zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5V20h7v-4.5c0-1.4-1.1-2.5-2.5-2.5ZM4.5 0C2 0 0 2 0 4.5S2 9 4.5 9 9 7 9 4.5 7 0 4.5 0Z" fill="currentColor"></path>
+                                    </svg><span>People</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-icon">
+                                <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23 3H1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h22a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1ZM2 19h20V5H2v14Z" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 9h6V7H4v2Zm0 4h6v-2H4v2Zm0 4h6v-2H4v2Zm-2 2h10V5H2v14Z" fill="currentColor" fill-opacity=".25"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 9h6V7h-6v2Zm0 4h6v-2h-6v2Zm6 4h-6v-2h6v2Z" fill="currentColor" fill-opacity=".6"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.534v8.933a.28.28 0 0 0 .439.23l6.433-4.436A.307.307 0 0 0 17 12a.305.305 0 0 0-.128-.26l-6.433-4.437a.28.28 0 0 0-.439.23Z" fill="currentColor"></path>
+                                    </svg><span>Learning</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-icon">
+                                <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center "> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                                    <path d="M15 4V3c0-1.7-1.3-3-3-3H8C6.3 0 5 1.3 5 3v1H0v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V4h-5ZM7 3c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1H7V3Zm10 9c1.2 0 2.3-.5 3-1.4V15c0 1.7-1.3 3-3 3H3c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4h14Z" fill="currentColor"></path>
+                                    </svg><span>Jobs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-icon">
+                                <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                                    <path d="M12.3446 11.8441C12.718 11.4706 13.2378 11.2385 13.8081 11.2385C14.7569 11.2385 15.5543 11.8744 15.8015 12.7424C15.9328 13.2117 16.2305 13.6155 16.6191 13.8829L20.5 10.002L16.6191 6.12114L16.6797 6.03534C16.9471 5.68712 17.3256 5.42469 17.7597 5.30357C18.6277 5.05629 19.2636 4.25891 19.2636 3.31013C19.2636 2.73986 19.0314 2.22005 18.658 1.8466C18.2845 1.47314 17.7647 1.241 17.1944 1.241C16.2456 1.241 15.4483 1.87688 15.201 2.74491C15.0799 3.17892 14.8174 3.55742 14.4692 3.8249L14.3834 3.88546L10.4975 -0.000488281L6.61658 3.88041C6.8891 4.27405 7.28779 4.56676 7.75713 4.70302C8.62516 4.95031 9.26104 5.74768 9.26104 6.69646C9.26104 7.26673 9.02889 7.78654 8.65544 8.16C8.28198 8.53345 7.76218 8.7656 7.1919 8.7656C6.24312 8.7656 5.44575 8.12971 5.19846 7.26169C5.06725 6.79234 4.76949 6.38861 4.3809 6.12114L0.5 9.99699L4.3809 13.8779L4.32034 13.9637C4.05286 14.3119 3.67436 14.5743 3.24035 14.6954C2.37232 14.9427 1.73644 15.7401 1.73644 16.6889C1.73644 17.2592 1.96858 17.779 2.34204 18.1524C2.71549 18.5259 3.2353 18.758 3.80558 18.758C4.75435 18.758 5.55173 18.1221 5.79902 17.2541C5.92014 16.8201 6.18256 16.4416 6.53078 16.1741L6.61658 16.1136L10.4975 19.9945L14.3784 16.1136C14.1059 15.7199 13.7072 15.4272 13.2378 15.291C12.3698 15.0437 11.7339 14.2463 11.7339 13.2975C11.7339 12.7272 11.9661 12.2074 12.3395 11.834L12.3446 11.8441Z" fill="currentColor" fill-opacity=".9"></path>
+                                     </svg><span>Games</span>
+                                 </a>
+                            </li>
+                            <li class="nav-item nav-icon">
+                                <a href="#" class="nav-link px-3 d-flex  border-start border-end flex-column justify-content-center align-items-center border-md-start border-md-end border-tertiary get-app">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="laptop-medium" data-supported-dps="24x24" fill="currentColor" focusable="false" class="lazy-loaded" aria-busy="false">
+                                    <path d="M21 17V8c0-1.66-1.34-3-3-3H6C4.34 5 3 6.34 3 8v9H1v1c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-1h-2zM11 6h2v1h-2V6zm8 11h-5c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1H5V9c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v8z"></path>
+                                    </svg><span>Get the app</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Join and Sign in -->
+                    <div class="navbar-nav  d-flex flex-row justify-content-center align-items-center" style="width: 195px;">
+                        <div class="hover-gray rounded-pill px-3 me-2"><a href="signup.html" class="nav-link tertiary" style="text-decoration: none; font-weight: bold; font-size: small;"><span>Join now</span></a></div>
+                        <a href="signin.html" class="btn btn-lg rounded-pill btn-outline-primary botton-hover fw-semibold" style="font-size: medium;">Sign in</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Visible Icons before medium screen -->
+            <div class="scroll2 d-block d-md-none pe-5" style="width: 100vw; overflow: auto;">
+                <ul class="navbar-nav d-flex flex-row justify-content-evenly align-items-end ps-0 pe-5" style="gap: 10vw; width: 100%; margin-left: auto; min-width: 400px;">
+                    <li class="nav-item nav-icon">
+                        <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 17" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="m11 9.5h5v1h-5v-1zm5-5h-12v3h12v-3zm-5 8h5v-1h-5v1zm9-12v13c0 1.657-1.343 3-3 3h-14c-1.657 0-3-1.343-3-3v-13h20zm-2 2h-16v11c0 0.552 0.449 1 1 1h14c0.551 0 1-0.448 1-1v-11zm-9 7h-5v3h5v-3z" fill="currentColor" fill-opacity=".9"></path>
+                            </svg><span>Article</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">   
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M9 14v6H0v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3Zm5.5-3c1.9 0 3.5-1.6 3.5-3.5S16.4 4 14.5 4 11 5.6 11 7.5s1.6 3.5 3.5 3.5Zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5V20h7v-4.5c0-1.4-1.1-2.5-2.5-2.5ZM4.5 0C2 0 0 2 0 4.5S2 9 4.5 9 9 7 9 4.5 7 0 4.5 0Z" fill="currentColor"></path>
+                            </svg><span>People</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23 3H1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h22a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1ZM2 19h20V5H2v14Z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 9h6V7H4v2Zm0 4h6v-2H4v2Zm0 4h6v-2H4v2Zm-2 2h10V5H2v14Z" fill="currentColor" fill-opacity=".25"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 9h6V7h-6v2Zm0 4h6v-2h-6v2Zm6 4h-6v-2h6v2Z" fill="currentColor" fill-opacity=".6"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.534v8.933a.28.28 0 0 0 .439.23l6.433-4.436A.307.307 0 0 0 17 12a.305.305 0 0 0-.128-.26l-6.433-4.437a.28.28 0 0 0-.439.23Z" fill="currentColor"></path>
+                            </svg><span>Learning</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center "> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M15 4V3c0-1.7-1.3-3-3-3H8C6.3 0 5 1.3 5 3v1H0v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V4h-5ZM7 3c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1H7V3Zm10 9c1.2 0 2.3-.5 3-1.4V15c0 1.7-1.3 3-3 3H3c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4h14Z" fill="currentColor"></path>
+                            </svg><span>Jobs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a href="#" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M12.3446 11.8441C12.718 11.4706 13.2378 11.2385 13.8081 11.2385C14.7569 11.2385 15.5543 11.8744 15.8015 12.7424C15.9328 13.2117 16.2305 13.6155 16.6191 13.8829L20.5 10.002L16.6191 6.12114L16.6797 6.03534C16.9471 5.68712 17.3256 5.42469 17.7597 5.30357C18.6277 5.05629 19.2636 4.25891 19.2636 3.31013C19.2636 2.73986 19.0314 2.22005 18.658 1.8466C18.2845 1.47314 17.7647 1.241 17.1944 1.241C16.2456 1.241 15.4483 1.87688 15.201 2.74491C15.0799 3.17892 14.8174 3.55742 14.4692 3.8249L14.3834 3.88546L10.4975 -0.000488281L6.61658 3.88041C6.8891 4.27405 7.28779 4.56676 7.75713 4.70302C8.62516 4.95031 9.26104 5.74768 9.26104 6.69646C9.26104 7.26673 9.02889 7.78654 8.65544 8.16C8.28198 8.53345 7.76218 8.7656 7.1919 8.7656C6.24312 8.7656 5.44575 8.12971 5.19846 7.26169C5.06725 6.79234 4.76949 6.38861 4.3809 6.12114L0.5 9.99699L4.3809 13.8779L4.32034 13.9637C4.05286 14.3119 3.67436 14.5743 3.24035 14.6954C2.37232 14.9427 1.73644 15.7401 1.73644 16.6889C1.73644 17.2592 1.96858 17.779 2.34204 18.1524C2.71549 18.5259 3.2353 18.758 3.80558 18.758C4.75435 18.758 5.55173 18.1221 5.79902 17.2541C5.92014 16.8201 6.18256 16.4416 6.53078 16.1741L6.61658 16.1136L10.4975 19.9945L14.3784 16.1136C14.1059 15.7199 13.7072 15.4272 13.2378 15.291C12.3698 15.0437 11.7339 14.2463 11.7339 13.2975C11.7339 12.7272 11.9661 12.2074 12.3395 11.834L12.3446 11.8441Z" fill="currentColor" fill-opacity=".9"></path>
+                             </svg><span>Games</span>
+                         </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a href="#" class="nav-link px-3 d-flex  border-start border-end flex-column justify-content-center align-items-center border-md-start border-md-end border-tertiary get-app">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="laptop-medium" data-supported-dps="24x24" fill="currentColor" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M21 17V8c0-1.66-1.34-3-3-3H6C4.34 5 3 6.34 3 8v9H1v1c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-1h-2zM11 6h2v1h-2V6zm8 11h-5c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1H5V9c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v8z"></path>
+                            </svg><span>Get the app</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <main>
+        <section class="section1 position-relative justify-content-between overflow-hidden" style="position: relative; display: flex;">
+            <div class="container-xl w-100 section1-container">
+            <!--Section1 left--> 
+                <div class="section1-form" style="width: 50%;">
+                    <p class="firstp" style="color: rgb(178,64,32); font-size: 50px; font-weight: lighter;">Welcome to your professional community</p>
+                    <form method="post" style="width: 400px;"> 
+                    <div class="">
+                        <label for="email-and-phone" class="form-label text-black-50 small fw-bold">Email or phone</label>
+                        <div class="border border-light rounded d-flex flex-row justify-content-center align-items-center p-1 input-div">
+                            <input type="email" class="hover-border-dark border border-dark form-control p-3 hover-gray hover-border">
+                         </div>   
+                    </div>  
+                    <div class="mt-4">
+                        <label for="password" class="form-label fw-bold text-black-50 gray" id="password">Password</label>
+                        <div class="border border-light rounded d-flex flex-row position-relative justify-content-center align-items-center p-1 input-div">
+                            <input type="password" class="hover-border-dark border border-dark form-control hover-gray hover-boder p-3" id="password"> <span class="text-primary position-absolute small fw-bold"><botton>show<span class="d-none">hide</span></botton></span>
+                        </div>
+                    </div>
+                    <div class="mt-3" style=";"><a href="https://www.linkedin.com/uas/request-password-reset?trk=homepage-basic_forgot_password" class="fw-bold text-decoration-none hover-underline-blue">Forget password ?</a></div>
+                    <a href="signin.html" class="text-decoration-none" style=""><div class="tw-bold bg-primary hover-blue text-center mt-4 rounded-pill py-2 text-light">Sign in</div></a>
+                    <div class="mt-2 d-flex flex-row justify-content-evenly align-items-center">
+                        <div class="col-5"><hr></div>
+                        <span>or</span>
+                        <div class="col-5"><hr></div>
+                    </div>
+                    <p class="small-text mt-2">By clicking Continue to join or sign in, you agree to LinkedIn's <a class="text-decoration-none hover-underline-blue" href="https://www.linkedin.com/legal/user-agreement?trk=homepage-basic_auth-button_user-agreement">User Agreement</a>, 
+                        <a class="text-decoration-none hover-underline-blue" href="https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_auth-button_privacy-policy">Privacy Policy</a>, and 
+                        <a class="text-decoration-none hover-underline-blue" href="https://www.linkedin.com/legal/cookie-policy?trk=homepage-basic_auth-button_cookie-policy">Cookie Policy.</a></p>
+                        <a href="accounts.google.com" class="text-decoration-none text-muted">
+                            <div class="continue mt-5 rounded-pill py-2 hover-border-dark border border-dark text-center d-flex flex-row justify-content-center align-items-center hover-gray hover-border">
+                                <span class="me-2"><img src="Project images/google_image-removebg-preview.png" alt="google logo" style="width: auto; height: 23px;"></span>
+                                <span class="text-black-50 text-center fw-semibold">Continue with Google</span>
+                            </div>
+                        </a>
+                        <a href="signup.html" class="text-decoration-none text-muted">
+                            <div class="mt-3 rounded-pill py-3 border border-dark fw-semibold text-center text-dark-50 fw-2 hover-text-dark hover-gray">
+                                New to LinkedIn? Join now
+                            </div>
+                        </a>
+                    </form>
+                </div>
+                </div>
+                <!-- Section 1 right -->
+                <div class="section1-image" style="right: -2vw;top: 15vh; position: absolute;width: 50%; z-index: -1;">
+                    <div class="">
+                        <img src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" alt="section background" style="height: 560px; width: auto;">
+                    </div>
+                </div>
+        </section>
+        <section style="padding: 15px 0;" class="section-2">
+            <div class="section2 container-xl mt-5 d-flex" style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <div class="child me-3" style="width: 40%;" >
+                    <p style="font-size: 50px; font-weight: light;">Explore collaborative articles</p>
+                    <p class="fs-5">We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.</p>
+                </div>
+                <div class="child" style="width: 60%;">
+                    <div class="">
+                    <a href="https://www.linkedin.com/pulse/topics/marketing" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted rounded-pill mt-2 py-2 px-4 fs-6">Marketing</a>
+                    <a href="https://www.linkedin.com/pulse/topics/public-administration-s3697" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-2 px-4 rounded-pill">Public Administration</a>
+                    <a href="https://www.linkedin.com/pulse/topics/healthcare-s282" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Healthcare</a>
+                    <a href="https://www.linkedin.com/pulse/topics/engineering-s166" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Engineering</a>
+                    <a href="https://www.linkedin.com/pulse/topics/it-services-s57547" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">IT Services</a>
+                    <a href="https://www.linkedin.com/pulse/topics/sustainability-s932" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Sustainability</a>
+                    <a href="https://www.linkedin.com/pulse/topics/business-administration-s50111" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-2 px-4 rounded-pill">Business Administration</a>
+                    <a href="https://www.linkedin.com/pulse/topics/telecommunications-s314" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Telecommunications</a>
+                    <a href="https://www.linkedin.com/pulse/topics/hr-management-s50359" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">HR Management</a>
+                    <a href="https://www.linkedin.com/pulse/topics/marketing" class="btn btn-outline-primary btn-lg rounded-pill fw-semibold botton-hover hover-text-blue mt-2 fs-6">Show all</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section class="section-3" style="margin: 60px 0;">
+            <div class="section3 d-flex container-xl" style="flex-direction: row; align-items: start; justify-content: space-between;">
+                <div class="child me-3" style="width: 40%;">
+                    <p style="font-size: 44px; font-weight: light;" class="lh-sm">Find the right job or internship for you</p>
+                </div>
+                <div class="child" style="width: 60%;">
+                        <div>
+                            <div>
+                                <a href="https://www.linkedin.com/jobs/engineering-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted rounded-pill mt-2 py-2 px-4 fs-6">Engineering</a>
+                                <a href="https://www.linkedin.com/jobs/business-development-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-2 px-4 rounded-pill">Business Development</a>
+                                <a href="https://www.linkedin.com/jobs/finance-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Finance</a>
+                                <a href="https://www.linkedin.com/jobs/administrative-assisstant-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Administrative Assisstant</a>
+                                <a href="https://www.linkedin.com/jobs/retail-associate-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Retail Associate</a>
+                                <a href="https://www.linkedin.com/jobs/customer-service-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-2 px-4 rounded-pill">Customer Service</a>
+                                <a href="https://www.linkedin.com/jobs/operations-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Operations</a>
+                                <a href="https://www.linkedin.com/jobs/information-technology-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 py-2 px-4 mt-2 rounded-pill">Information Technology</a>
+                                <a href="https://www.linkedin.com/jobs/marketing-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Marketing</a>
+                                <a href="https://www.linkedin.com/jobs/human-resources-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Human Resources</a>
+                                <a href="https://www.linkedin.com/jobs/healthcare-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill hidden-focus">Healthcare Services</a>
+                                <a href="https://www.linkedin.com/jobs/sales-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill hidden-focus">Sales</a>
+                            </div>
+                            <button class="show-all bg-light hover-gray rounded-pill fw-semibold text-center text-black-50 hover-text-dark hover-gray py-1 px-3 mt-2 fs-6" onclick="showall()" id="show-button" style="display: block;">Show all <i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                        <div id="show-button-div" class="show-inner-div" style="display: none;">
+                            <div class="show-all-inner">
+                                <a href="https://www.linkedin.com/jobs/program-and-project-management-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted rounded-pill py-2 px-4 mt-2 fs-6">Program and Project Management</a>
+                                <a href="https://www.linkedin.com/jobs/accounting-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-2 px-4 rounded-pill">Accounting</a>
+                                <a href="https://www.linkedin.com/jobs/arts-and-design-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Arts and Design</a>
+                                <a href="https://www.linkedin.com/jobs/community-and-social-services-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Community and Social Services</a>
+                                <a href="https://www.linkedin.com/jobs/consulting-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Consulting</a>
+                                <a href="https://www.linkedin.com/jobs/education-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Education</a>
+                                <a href="https://www.linkedin.com/jobs/entrepreneurship-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 py-2 px-4 text-muted rounded-pill">Entrepreneurship</a>
+                                <a href="https://www.linkedin.com/jobs/legal-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Legal</a>
+                                <a href="https://www.linkedin.com/jobs/media-and-communications-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Media and Communications</a>
+                                <a href="https://www.linkedin.com/jobs/military-and-protective-services-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted py-2 px-4 fs-6 mt-2 rounded-pill">Military and Protective Services</a>
+                                <a href="https://www.linkedin.com/jobs/product-management-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Product Management</a>
+                                <a href="https://www.linkedin.com/jobs/purchasing-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Purchasing</a>
+                                <a href="https://www.linkedin.com/jobs/quality-assurance-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Quality Assurance</a>
+                                <a href="https://www.linkedin.com/jobs/real-estate-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Real Estate</a>
+                                <a href="https://www.linkedin.com/jobs/research-support-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Research Support</a>
+                                <a href="https://www.linkedin.com/jobs/administrative-jobs" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Administrative</a>
+                            </div>
+                            <button class="mb-5 bg-light hover-gray rounded-pill fw-semibold text-center text-black-50 hover-text-dark hover-gray py-1 px-3 mt-2 fs-6" onclick="showless()">Show less <i class="fa-solid fa-chevron-up"></i></button>
+                        </div>
+                    </div>
+        </section>
+        <section class="section-4" style="width: 100%; overflow: hidden;">
+            <div class="section4 py-5  my-5" style="background-color: rgb(241,236,229); ">
+                <div class="col-12 text-center">
+                    <p style="font-size: 40px; font-weight: light; color: rgb(178,64,32);" class="lh-2">Post your job for millions of people to see</p>
+                </div>
+                <div class="col-12 text-start text-md-center mt-3 ms-2">
+                    <a href="https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta" class="btn btn-outline-primary fs-6 fw-semibold botton-hover hover-text-blue btn-lg rounded-pill">Post a job</a>
+                </div>
+                </div>
+        </section>
+        <section class="section-5" style="margin-top: 70px;">
+            <div class="section5 container-xl d-flex" style="flex-direction: row; justify-content: space-between; align-items: start;">
+                <div class="child pt-3" style="width: 40%;">
+                    <p style="font-size: 45px; font-weight: light;">Discover the best software tools</p>
+                    <p class="fs-5">Connect with buyers who have first-hand experience to find the best products for you.</p>
+                </div>
+                <div class="child ps-2" style="width: 60%;">
+                    <div class="mt-1">
+                        <a href="https://www.linkedin.com/products/categories/e-commerce-platforms" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted rounded-pill mt-2 py-3 px-4 fs-6">E-Commerce Platform</a>
+                        <a href="https://www.linkedin.com/products/categories/crm-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-3 px-4 rounded-pill">CRM Software</a>
+                        <a href="https://www.linkedin.com/products/categories/human-resources-management-system" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-3 px-4 rounded-pill">Human Resources Management System</a>
+                        <a href="https://www.linkedin.com/products/categories/recruiting-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-3 px-4 rounded-pill">Recruiting Software</a>
+                        <a href="https://www.linkedin.com/products/categories/sales-intelligence-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-3 px-4 rounded-pill">Sales Intelligence Software</a>
+                        <a href="https://www.linkedin.com/products/categories/project-management-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-3 px-4 rounded-pill">Project Management Software</a>
+                        <a href="https://www.linkedin.com/products/categories/help-desk-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-3 px-4 rounded-pill">Help Desk Software</a>
+                        <a href="https://www.linkedin.com/products/categories/social-networking-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-3 px-4 rounded-pill">Social Networking Software</a>
+                        <a href="https://www.linkedin.com/products/categories/desktop-publishing-software" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-3 px-4 rounded-pill">Desktop Publishing Software</a>
+                        <a href="" class="btn btn-outline-primary py-3 px-4 rounded-pill fw-semibold botton-hover hover-text-blue mt-2 fs-6">Show all</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section class="secrion-6">
+            <div class="section6 container-xl d-flex mt-5 pt-5" style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <div class="child pt-3 me-3" style="width: 40%;">
+                    <p style="font-size: 45px; font-weight: light;">Keep your mind sharp with games</p>
+                    <p class="fs-5">Take a break and reconnect with your network through quick daily games.</p>
+                </div>
+                <div class="child d-flex flex-row justify-content-start align-items-center" style="width: 60%;">
+                    <div class="mt-1">
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fgames%2Fpinpoint" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted rounded-pill mt-2 py-2 px-4 fs-6">Pinpoint</a>
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fgames%2Fqueens" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold fs-6 mt-2 text-muted py-2 px-4 rounded-pill">Queens</a>
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fgames%2Fcrossclimb" class="hover-text-dark hover-gray btn btn-outline-dark btn-lg fw-semibold text-muted fs-6 mt-2 py-2 px-4 rounded-pill">Crossclimb</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+        </section>
+        <section  class="section-7">
+            <div class="" style="background-color: rgb(243,242,240); height: fit-content; margin: 0;" >
+                <div class="container-xl my-5" style="padding: 150px 0;">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="100000">
+                            <div class="section7-flex mx-3 mx-xl-0 d-flex position-relative" style="width: 100%; flex-direction: row; justify-content: start; align-items: center;">
+                                <div class="py-3 d-flex flex-column justify-content-center align-items-start" style="width: 55%;">
+                                    <p style="font-size: 45px; font-weight: light; color: rgb(178,64,32);" class="lh-2">Let the right people know you’re open to work</p>
+                                    <p class="fs-5">With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.</p>
+                                </div>
+                                <div class="py-3 position-md-sticky" style="width: 45%; right: 1vw;">
+                                    <img src="https://static.licdn.com/aero-v1/sc/h/dbvmk0tsk0o0hd59fi64z3own" style="width:450px; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="100000">
+                            <div class="section7-flex d-flex position-relative" style="width: 100%; flex-direction: row; justify-content: space-between; align-items: center;">
+                                <div class="py-3 mx-3 mx-xl-0 d-flex flex-column justify-content-center align-items-start" style="width: 55%;">
+                                    <p style="font-size: 45px; font-weight: light; color: rgb(178,64,32);" class="lh-2">Conversations today could lead to opportunity tomorrow</p>
+                                    <p class="fs-5">Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career.</p>
+                                </div>
+                                <div class="py-3 position-md-sticky end-0" style="width: 45%; ">
+                                    <img src="https://static.licdn.com/aero-v1/sc/h/2r8kd5zqpi905lkzsshdlvvn5" style="width:450px; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="100000">
+                            <div class="section7-flex mx-3 mx-xl-0 d-flex position-relative" style="width: 100%; flex-direction: row; justify-content: space-between; align-items: center;">
+                                <div class="py-3 d-flex flex-column justify-content-center align-items-start" style="width: 55%;">
+                                    <p style="font-size: 45px; font-weight: light; color: rgb(178,64,32);" class="lh-2">Stay up to date on your industry</p>
+                                    <p class="fs-5">From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry.</p>
+                                </div>
+                                <div class="py-3 position-md-sticky end-0" style="width: 45%;">
+                                    <img src="https://static.licdn.com/aero-v1/sc/h/ann24vsq7r0ux3vipqa1n90gg" style="width:450px; height: auto;" class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark opacity-100 rounded-circle" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark opacity-100 rounded-circle" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                </div>
+        </section>
+        <section class="section-8">
+            <div class="section8 container-xl my-5 py-5 d-flex" style="flex-direction: row; justify-content: space-between; align-items: start;">
+                <div class="pe-5 child" style="width: 50%;">
+                    <img class="my-5" src="https://static.licdn.com/aero-v1/sc/h/b1fxwht7hdbeusleja7ciftsj" style="width: 300px; height: auto;" alt="Male and female having a discussion">
+                    <p style="font-size: 47px; font-weight: light; width: 80%;" class="text-dark mb-4">Connect with people who can help</p>
+                    <a class="btn btn-outline-dark text-black-50 rounded-pill fw-semibold py-2 px-3 hover-gray hover-text-dark" role="botton" href="https://www.linkedin.com/pub/dir/+/+?trk=homepage-basic">Find people you know</a>
+                </div>
+                <div class="child" style="width: 50%;">
+                    <img class="my-5" src="https://static.licdn.com/aero-v1/sc/h/dkfub4sc7jgzg3o31flfr91rv" style="width: 300px; height: auto;" alt="Male and female having a discussion">
+                    <p style="font-size: 47px; width: 80%; font-weight: light;" class="text-dark mb-4">Learn the skills you need to succeed</p>
+                    <div class="row">
+                        <div class="dropdown-center">
+                            <button class="btn btn-outline-light border border-black-50 shadow-sm dropdown-toggle px-3 py-3 fs-5 hover-gray-button text-dark " type="button" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="pe-5">Choose a topic to learn about</span>
+                            </button>
+                            <ul class="dropdown-menu ms-2 pe-5 overflow-auto dropdown-menu-start" style="height: 380px">
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-analysis-and-strategy">Business Analysis and Strategy <span class="fw-normal">1,470+ course</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Business Software and Tools<span class="fw-normal">2,420+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/career-development">Career Development<span class="fw-normal">590+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Customer Service<span class="fw-normal"> 220+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-analysis-and-strategy">Diversity, Equity, and Inclusion (DEI)<span class="fw-normal">300+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Finance and Accounting<span class="fw-normal">280+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/career-development">Human Resources<span class="fw-normal">510+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Leadership and Management<span class="fw-normal">1,850+ course</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Marketing<span class="fw-normal"> 970+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/career-development">Professional Development
+                                <span class="fw-normal">1,790+ course</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Project Management
+                                <span class="fw-normal">530+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-analysis-and-strategy">Small Business and Entrepreneurship
+                                    <span class="fw-normal">340+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Sales
+                                    <span class="fw-normal">290+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/career-development">Training and Education
+                                    <span class="fw-normal">310+ courses</span></a></li>
+                                <li><a class="dropdown-item d-flex flex-column justify-content-center hover-underline hover-no-background fw-bold pb-3 text-dark align-items-start" href="https://www.linkedin.com/learning/topics/business-software-and-tools">Animation and Illustration
+                                    <span class="fw-normal">1,780+ course</span></a></li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
+                </div>
+        </section>
+        <section class="section-9 position-relative overflow-hidden" style="position: relative; display: flex; height: 950px; justify-content: space-between; align-items: center;">
+            <div class="section9 container-xl w-100 section1-container">
+            <!--Section1 left--> 
+            <div class="child-med" style="background: transparent; height: fit-content; width: 50%;">
+                <div class="pe-2 pt-5 pb-4 child-med">
+                    <p class="mt-5 pt-5" style="font-size: 40px; font-weight: light; color: rgb(178,64,32);">Who is LinkedIn for?</p>
+                    <p class="fs-4 w-100">Anyone looking to navigate their professional life.</p>
+                    <div class="child-med" style="width: 90%;">
+                    <a href="signup.html" class="px-3 py-3 mt-4 hover-light-brown text-decoration-none text-dark fs-5 d-flex flex-row justify-content-between" 
+                    style="background-color: rgb(234,230,223);">Find a coworker or classmate <span class="ms-5 ps-5"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <a href="signup.html" class="px-3 py-3 mt-4 hover-light-brown text-decoration-none text-dark fs-5 d-flex flex-row justify-content-between" 
+                    style="background-color: rgb(234,230,223);">Find a new job <span class="ms-5 ps-5"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <a href="signup.html" class="px-3 py-3 mt-4 hover-light-brown text-decoration-none text-dark fs-5 d-flex flex-row justify-content-between" 
+                    style="background-color: rgb(234,230,223);">Find a course or training <span class="ms-5 ps-5"><i class="fa-solid fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <!-- Section 1 right -->
+                <div class="d-none d-md-block section1-image" style="right: -2vw;top: 15vh; position: absolute;width: 45%;">
+                    <div class="">
+                        <img src="https://static.licdn.com/aero-v1/sc/h/292yd0en6qdvkbezeuj71yu4y" alt="A man showing a woman a page in a book">
+                    </div>
+                </div>
+                <div class="child-med" style="width: 50%; height: 70%; position: absolute; top: 150px; left: 0; background-color: rgb(243,242,240);z-index: -1;">
+      
+                </div>
+        </section>
+        <section class="section-10" style="width:">
+                <div class="section10 container-xl mx-auto" style="">
+                    <p style="font-size: 48px; font-weight: light;">Join your colleagues, classmates, and friends on LinkedIn.</p>
+                    <a class="btn btn-primary btn-md rounded-pill px-4 py-2 fw-bold" href="signup.html">Get started</a>
+                </div>
+        </section>
+        <footer class="py-4" style="background-color: rgb(243,242,240);">
+            <div class="footer-col container-xl pb-3 d-flex" style="flex-direction: row; justify-content: space-between; align-items: start;">
+                <div class="col-2">
+                    <img src="Project images/Linkedin-Logo-2048x1280-removebg-preview.png" alt="linkedin logo" style="width: 80px;" loading="lazy">
+                </div>
+                <div class="footer-links" style="display: flex; flex-direction: row; justify-content: end; align-items: start; gap: 7%; width: 90%; max-width: 90vw; margin-left: -40px;">
+                <div class="minimum-footer d-flex flex-column justify-content-center align-items-start">
+                    <p class="fw-semibold">General</p>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="signup.html">Sign Up</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Help Center</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">About</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Press</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="">Blog</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Careers</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Developers</a>
+                </div>
+                <div class="minimum-footer d-flex flex-column justify-content-center align-items-start">
+                    <p class="fw-semibold">Browse linkedin</p>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Learning</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Jobs</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Games</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="">Salary</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Mobile</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Services</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Products</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="signup.html">Top Companies Hub</a>
+                </div>
+                <div class="minimum-footer d-flex flex-column justify-content-center align-items-start">
+                    <p class="fw-semibold">Business Solutions</p>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="signup.html"> Talent</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Marketing</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#"> Sales</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Learning</a>
+                </div>
+                <div class="minimum-footer d-flex flex-column justify-content-center align-items-start">
+                    <p class="fw-semibold">Directories</p>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="signup.html">Members</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Jobs</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Companies</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Featured</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="">Learning</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Posts</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Articles</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Schools</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">News</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">News Letters</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href=""> Services</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Products</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">Advice</a>
+                    <a class="text-decoration-none  hover-underline-blue hover-text-blue text-black-50 fw-semibold" style="font-size: 14px" href="#">People Search</a>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <address class="mt-4" style="width:;">
+            <div class="container-xl d-none d-lg-flex address-display-big flex-row justify-content-start align-items-center gap-3">
+                <div class="footer-img-div small-text"><img src="Project images/linkedin dark.webp" alt="linkedin dark logo" style="width: 60px;"><span> &#169 2024</span></div>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style=";">About</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Accessibility</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">User Agreement</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Privacy Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Cookie Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Copyright Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Brand Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Guest Controls</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Community Guidelines</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Language <span><i class="fa-solid fa-chevron-down"></i></span></a>
+            </div>
+            <div class="mx-5 mb-5 pe-5 address-display-big d-flex d-lg-none flex-row justify-content-between align-items-start pe-5"> 
+            <div class="col-12 mt-4 d-flex flex-row justify-content-start align-items-start pe-5" style="gap: 50%;"> 
+            <div class="address-right d-flex flex-column justify-content-start align-items-start gap-3">
+                <div class="footer-img-div"><img src="Project images/linkedin dark.webp" alt="linkedin dark logo" style="width: 60px;"><span> &#169 copyright</span></div>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Accessibility</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Privacy Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Copyright Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Guest Controls</a>
+            </div>
+            <div class="address-left address-right d-flex flex-column justify-content-start align-items-start gap-3">
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style=";">About</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">User Agreement</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Cookie Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Brand Policy</a>
+                <a href="#" class="fw-semibold text-black-50 text-decoration-none hover-text-blue hover-underline-blue smaller-text" style="">Community Guidelines</a>
+            </div>
+            </div>
+            </div>  
+        </address>
+            <div aria-live="polite" aria-atomic="true" class="bg-dark bd-example-toasts">
+            <div class="toast-container d-none d-md-block p-3 position-fixed bottom-0 end-0" id="toastPlacement">
+              <div class="toast show p-2 rounded" style="background-color: rgba(237,243,245, 0.9);">
+                <div class="toast-header" style="background: transparent;">
+                  <img src="Project images/linkedin_image-removebg-preview.png" class="me-2" style="width: 25px;">
+                  <strong class="me-auto fw-lighter">LINKEDIN</strong>
+                  <button type="button" class="btn-close dark" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                  <p class="text-muted fs-6 fw-semibold">Get the new LinkedIn Windows app</p>
+                  <p class="text-black-50" style="font-size: small;">Everything you love about LinkedIn - now in a desktop app designed for Windows users like you.</p>
+                  <a href="https://apps.microsoft.com/detail/9wzdncrfj4q7?hl=en-US&gl=US" type="button" class="btn btn-outline-primary rounded-pill fw-semibold botton-hover px-3 py-2" id="liveToastBtn" style="font-size: small;">Get the app</a>
+                </div>
+                </div>
+              </div>
+            </div>      
+      </main>
+</body>
+</html>

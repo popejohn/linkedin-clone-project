@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed | Linkedin</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="media/x-icon" href="Project images/linkedin_image-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0271217e1a.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: rgb(244,242,238);">
+    <div class="container-fliud">
+        <div class= "position-fixed top-0 border border-tertiary overflow-hidden" style="background-color: white; z-index: 20; width: 100vw">
+        <nav class="navbar container-lg ps-2 ps-lg-0 pb-0 mb-0 d-flex flex-row justify-content-start justify-content-lg-between align-items-center gap-lg-3" style="margin-top: -12px; gap: 35px;">
+            <div class="d-flex justify-content-center mt-2 logo-search">
+                <div class="navbar-brand py-0 ms-2 ms-md-0" style="height: fit-content;">
+                    <img src="Project images/linkedin_image-removebg-preview.png" alt="Linkedin small logo" style="height: 35px;" class="me-1 me-md-2 my-2 my-md-1 my-lg-0 me-lg-0">
+                </div>
+                <button class="search-click btn rounded ps-3 py-1 d-none position-relative d-lg-flex justify-content-center align-items-center" style="height: fit-content; border: none; background-color: rgb(237,243,248); margin-left: -7px;">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>
+                    <input class="mx-2 search-input" role="combobox" aria-autocomplete="list" aria-expanded="false" 
+                    type="text" placeholder="Search" aria-label="Search" aria-activedescendant style="height: 25px; width: 230px; background: transparent; border: none; outline: none;">
+                    <div class="d-none show-on-click-search rounded position-absolute start-0 py-2 shadow-sm d-flex flex-column just-content-center align-items-start" style="width: 450px; z-index: 11; top: 108%; background-color: white;">
+                        <p class="fw-semibold small-text text-muted ms-2">Try searching for</p>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#hiring</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#jobadvice</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#covid-19</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#greatresignation</span></div>
+                        <div class="hover-gray px-3 py-2 fw-semibold d-flex flex-row align-items-center justify-content-start small-text text-muted" style="width: 100%;"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">#newjobpostings</span></div>
+                    </div>
+                    <div class="d-none position-absolute show-on-click-search" style="width: 100vw; height: 100vh; background-color: rgba(14, 14, 13, 0.863); z-index: 10; top: 45px; left: -170px;"></div>
+                </button> 
+                <div class="nav-item nav-icon d-flex d-lg-none me-md-0" style="margin-right: -10px; margin-bottom: -7px;">
+                    <button style="display: flex; justify-content: center; align-items: center; background-color: white; border: none;" class="search-button" onclick="nodisplay()">
+                        <div class="search-icon pb-1 d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            <div class="text-muted small-text d-none d-md-block" style="margin-top: -2px;">Search</div>
+                        </div>
+                        <!-- 656565yfggfg -->
+                    </button>
+                </div>
+            </div>
+            <!-- Navbar icons -->
+           <ul class="navbar-nav d-flex flex-row justify-content-start justify-content-md-end align-items-center align-items-sm-end gap-md-4" style="gap: 35px;" id="navno-display">
+                <li class="nav-item  nav-icon px-3 home-border" style="margin-right: -15px;">
+                    <a href="home.html" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center" aria-current="page">
+                        <svg class="span-home-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                          </svg>
+                        <div class="small-text d-none d-md-block">Home</div>
+                    </a>
+                </li>
+                    <li class="nav-item network-border nav-icon px-xl-1" style="border-bottom: 2px solid black; margin-right:;">
+                        <a href="network.html" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center">   
+                            <svg class="span-less-margin" xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M9 14v6H0v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3Zm5.5-3c1.9 0 3.5-1.6 3.5-3.5S16.4 4 14.5 4 11 5.6 11 7.5s1.6 3.5 3.5 3.5Zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5V20h7v-4.5c0-1.4-1.1-2.5-2.5-2.5ZM4.5 0C2 0 0 2 0 4.5S2 9 4.5 9 9 7 9 4.5 7 0 4.5 0Z" fill="currentColor"></path>
+                            </svg>
+                            <div class="small-text d-none d-md-block">My Network</div>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1">
+                        <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center"> 
+                            <svg class="span-job-margin" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                            <path d="M15 4V3c0-1.7-1.3-3-3-3H8C6.3 0 5 1.3 5 3v1H0v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V4h-5ZM7 3c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1H7V3Zm10 9c1.2 0 2.3-.5 3-1.4V15c0 1.7-1.3 3-3 3H3c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4h14Z" fill="currentColor"></path>
+                            </svg>
+                            <div class="small-text d-none d-md-block">Jobs</div>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1 show-from-338" style="display: block;">
+                        <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center">
+                            <svg class="span-messaging-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                              </svg>
+                            <div class="small-text d-none d-md-block">Messaging</div>
+                         </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1 show-from-338" style="display: block;">
+                        <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative">
+                            <svg class="span-notification-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="22" height="22" focusable="false">
+                                <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                              </svg>
+                            <div class="small-text d-none d-md-block">Notifications</div>
+                            <span class="position-absolute translate-middle badge rounded-pill bg-danger p-1" style="left: 65%; top:30%;">10</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon px-xl-1 display-from-445" style="display: block;">
+                        <button class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative me-button" type="button" style="border: none; background: transparent;">
+                            <img src="Project images/John new.jpg" alt="profile picture" style="width: 25px; height: 26px; border-radius: 50%;">
+                            <div class="d-flex just-content-center align-items-center d-none d-md-flex"> 
+                                <div style="margin-right: 3px;" class="hover-dark small-text">Me</div>
+                                <div class="position-relative">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="profile-dropdown position-absolute end-0 d-none flex-column justify-content-start align-items-start py-3 px-3" style="background-color: white; width: 300px; height: 70vh; overflow: auto; border-radius: 10px 0 10px 10px; top: 40px;">
+                                        <div>
+                                            <div class="d-flex justify-content-start align-items-start">
+                                                <img src="Project images/John new.jpg" alt="profile picture" class="mx-2" style="width: 80px; height: 80px; border-radius: 50%; border: 1px solid black;">
+                                                <div class="text-muted">
+                                                    <h5 style="text-align: left; font-size: medium;">John Idowu</h5>
+                                                    <p class="text-black-50 fw-semibold" style="text-align: left; font-size: small;">A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                                        various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                                        but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="btn btn-outline-primary fw-semibold hover-blue hover-border-blue rounded-pill" style="width: 100%;">View Profile</a>
+                                        </div>
+                                        <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                        <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                            <h5 class="text-muted fw-semibold" style="font-size: small;">Account</h5>
+                                            <div>
+                                                <img src="Project images/gold premium.jpeg" style="width: 15px;">
+                                                <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Premium features</a>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Settings and Privacy</a>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Help</a>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Language</a>
+                                        </div>
+                                        <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                        <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                            <h5 class="text-muted fw-semibold" style="font-size: small;">Manage</h5>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Post & Activity</a>
+                                            <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Job Posting Account</a>
+                                        </div>
+                                        <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                        <div>
+                                            <a href="signin.html" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Sign out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </li> 
+                    <li class="nav-item nav-icon position-relative display-445-576" style="display: none;">
+                        <button class="ellipses-focus d-flex pb-1 flex-column justify-content-center align-items-center" style="background-color: white; border: none;" onclick="myFunction()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                            <!-- Hiden nav icons for business and learning -->
+                        </button>
+                        <div class="position-absolute business-icons rounded justify-content-center align-items-center shadow-sm; px-3 gap-2 py-2" style="width: fit-content; background-color: white; display:none; flex-direction: row; top: 110%; right: 0;" id="showme-onclick">
+                            <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center me-2" style="border: none; background: transparent;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                </svg>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="small-text text-muted me-1 d-none">
+                                        For Business
+                                    </span>
+                                    <i class="fa-solid fa-caret-down d-none"></i>
+                                    </div>
+                                        <!-- For business dropdown -->
+                                    <div class="business-dropdown position-absolute vh-100 overflow-auto shadow-sm d-none flex-column align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: -5px; right: -80px;">
+                                        <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                            <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-compass-24.png" alt="">
+                                                    <span>Sell</span>
+                                                </a>
+                                            </div>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                    <span>Groups</span>
+                                                </a>
+                                            </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Talents</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-leader-48.png" alt="">
+                                                        <span>Talent Insights</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-new-job-40.png" alt="">
+                                                        <span>Post a job</span>
+                                                    </a>
+                                                </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Sales</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-services-62.png" alt="">
+                                                        <span>Services Marketplace</span>
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Marketing</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-dart-25.png" alt="">
+                                                        <span>Advertise</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-column justify-content-start align-items-start py-4" style="border-top: 1px solid rgb(224, 224, 224);">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </button>
+                                    <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                            <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                            <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                            <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                            <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                          </svg>
+                                          <span class="small-text text-muted d-none">Learning</span>
+                                    </a>
+                              </div>
+                         </li>
+                         <!-- Hidden business and learning icons least -->
+                         <li class="nav-item nav-icon position-relative business-learn-least" style="display: none;">
+                            <button class="ellipses-focus d-flex pb-1 flex-column justify-content-center align-items-center" style="background-color: white; border: none;" onclick="myFunction2()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                                <!-- Hiden nav icons for business and learning -->
+                            </button>
+                            <div class="position-absolute business-icons rounded justify-content-center align-items-center shadow-sm; px-3 gap-2 py-2" style="width: fit-content; background-color: white; display:none; flex-direction: row; top: 110%; right: 0;" id="showme-onclick2">
+                                    <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center">
+                                        <svg class="span-messaging-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                                          </svg>
+                                        <div class="small-text d-none d-md-block">Messaging</div>
+                                     </a>
+                                    <a href="#" class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative">
+                                        <svg class="span-notification-margin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="22" height="22" focusable="false">
+                                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                                          </svg>
+                                        <div class="small-text d-none d-md-block">Notifications</div>
+                                        <span class="position-absolute translate-middle badge rounded-pill bg-danger p-1" style="left: 65%; top:30%;">10</span>
+                                    </a>
+                                <button class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative me-button" type="button" style="border: none; background: transparent;">
+                                    <img src="Project images/John new.jpg" alt="profile picture" style="width: 25px; height: 26px; border-radius: 50%;">
+                                    <div class="d-flex just-content-center align-items-center d-none d-md-flex"> 
+                                        <div style="margin-right: 3px;" class="hover-dark small-text">Me</div>
+                                        <div class="position-relative">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                            <div class="profile-dropdown position-absolute end-0 d-none flex-column justify-content-start align-items-start py-3 px-3" style="background-color: white; width: 300px; height: 70vh; overflow: auto; border-radius: 10px 0 10px 10px; top: 40px;">
+                                                <div>
+                                                    <div class="d-flex justify-content-start align-items-start">
+                                                        <img src="Project images/John new.jpg" alt="profile picture" class="mx-2" style="width: 80px; height: 80px; border-radius: 50%; border: 1px solid black;">
+                                                        <div class="text-muted">
+                                                            <h5 style="text-align: left; font-size: medium;">John Idowu</h5>
+                                                            <p class="text-black-50 fw-semibold" style="text-align: left; font-size: small;">A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                                                various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                                                but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="btn btn-outline-primary fw-semibold hover-blue hover-border-blue rounded-pill" style="width: 100%;">View Profile</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Account</h5>
+                                                    <div>
+                                                        <img src="Project images/gold premium.jpeg" style="width: 15px;">
+                                                        <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Premium features</a>
+                                                    </div>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Settings and Privacy</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Help</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Language</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Manage</h5>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Post & Activity</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Job Posting Account</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div>
+                                                    <a href="signin.html" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Sign out</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center me-2" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                        <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="small-text text-muted me-1 d-none">
+                                            For Business
+                                        </span>
+                                        <i class="fa-solid fa-caret-down d-none"></i>
+                                        </div>
+                                            <!-- For business dropdown -->
+                                        <div class="business-dropdown position-absolute vh-100 overflow-auto shadow-sm d-none flex-column align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: -5px; right: -80px;">
+                                            <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-compass-24.png" alt="">
+                                                        <span>Sell</span>
+                                                    </a>
+                                                </div>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                        <span>Groups</span>
+                                                    </a>
+                                                </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Talents</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-leader-48.png" alt="">
+                                                            <span>Talent Insights</span>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="business-dropdown my-3">
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-new-job-40.png" alt="">
+                                                            <span>Post a job</span>
+                                                        </a>
+                                                    </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Sales</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-services-62.png" alt="">
+                                                            <span>Services Marketplace</span>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Marketing</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-dart-25.png" alt="">
+                                                            <span>Advertise</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="d-flex flex-column justify-content-start align-items-start py-4" style="border-top: 1px solid rgb(224, 224, 224);">
+                                                    <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        </button>
+                                        <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                                <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                                <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                                <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                              </svg>
+                                              <span class="small-text text-muted d-none">Learning</span>
+                                        </a>
+                                  </div>
+                             </li>
+                         <!-- Hidden business and learning icons at 445px -->
+                         <li class="nav-item nav-icon position-relative business-learn-445" style="display: none;">
+                            <button class="ellipses-focus d-flex pb-1 flex-column justify-content-center align-items-center" style="background-color: white; border: none;" onclick="myFunction1()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                                <!-- Hiden nav icons for business and learning -->
+                            </button>
+                            <div class="position-absolute business-icons rounded justify-content-center align-items-center shadow-sm; px-3 gap-2 py-2" style="width: fit-content; background-color: white; display:none; flex-direction: row; top: 110%; right: 0;" id="showme-onclick1">
+                                <button class="nav-link pb-1 d-flex flex-column justify-content-center align-items-center position-relative me-button" type="button" style="border: none; background: transparent;">
+                                    <img src="Project images/John new.jpg" alt="profile picture" style="width: 25px; height: 26px; border-radius: 50%;">
+                                    <div class="d-flex just-content-center align-items-center d-none d-md-flex"> 
+                                        <div style="margin-right: 3px;" class="hover-dark small-text">Me</div>
+                                        <div class="position-relative">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                            <div class="profile-dropdown position-absolute end-0 d-none flex-column justify-content-start align-items-start py-3 px-3" style="background-color: white; width: 300px; height: 70vh; overflow: auto; border-radius: 10px 0 10px 10px; top: 40px;">
+                                                <div>
+                                                    <div class="d-flex justify-content-start align-items-start">
+                                                        <img src="Project images/John new.jpg" alt="profile picture" class="mx-2" style="width: 80px; height: 80px; border-radius: 50%; border: 1px solid black;">
+                                                        <div class="text-muted">
+                                                            <h5 style="text-align: left; font-size: medium;">John Idowu</h5>
+                                                            <p class="text-black-50 fw-semibold" style="text-align: left; font-size: small;">A fullstack webdeveloper who has garnered experieces working with top multinational companies and has contributed <tbody>
+                                                                various projects solely and through collaborations. A highly crative and resilient developer, proficient in handling tech tools that include 
+                                                                but not limited to HTML5, CSS, BOOTSTAP, JAVASCRIPT, NODEJS, REACT, VUE, PHP, PYTHON.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="https://www.linkedin.com/in/john-idowu-9478bb149/" class="btn btn-outline-primary fw-semibold hover-blue hover-border-blue rounded-pill" style="width: 100%;">View Profile</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Account</h5>
+                                                    <div>
+                                                        <img src="Project images/gold premium.jpeg" style="width: 15px;">
+                                                        <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Premium features</a>
+                                                    </div>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Settings and Privacy</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Help</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Language</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div class="d-flex flex-column just-content-start align-items-start gap-1">
+                                                    <h5 class="text-muted fw-semibold" style="font-size: small;">Manage</h5>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Post & Activity</a>
+                                                    <a href="#" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Job Posting Account</a>
+                                                </div>
+                                                <div style="width: 100%; height: 1px; background-color: rgb(223, 221, 221);" class="my-2"></div>
+                                                <div>
+                                                    <a href="signin.html" class="text-decoration-none text-black-50 fw-semibold hover-underline-dark" style="font-size: small;">Sign out</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center me-2" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                        <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="small-text text-muted me-1 d-none">
+                                            For Business
+                                        </span>
+                                        <i class="fa-solid fa-caret-down d-none"></i>
+                                        </div>
+                                            <!-- For business dropdown -->
+                                        <div class="business-dropdown position-absolute vh-100 overflow-auto shadow-sm d-none flex-column align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: -5px; right: -80px;">
+                                            <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-compass-24.png" alt="">
+                                                        <span>Sell</span>
+                                                    </a>
+                                                </div>
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                        <span>Groups</span>
+                                                    </a>
+                                                </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Talents</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-leader-48.png" alt="">
+                                                            <span>Talent Insights</span>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="business-dropdown my-3">
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-new-job-40.png" alt="">
+                                                            <span>Post a job</span>
+                                                        </a>
+                                                    </div> 
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Sales</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-services-62.png" alt="">
+                                                            <span>Services Marketplace</span>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                    <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                        <span class="text-muted mb-2">Marketing</span>
+                                                        <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                            <img src="Project images/icons8-dart-25.png" alt="">
+                                                            <span>Advertise</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="d-flex flex-column justify-content-start align-items-start py-4" style="border-top: 1px solid rgb(224, 224, 224);">
+                                                    <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                        <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                        <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        </button>
+                                        <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                                <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                                <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                                <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                              </svg>
+                                              <span class="small-text text-muted d-none">Learning</span>
+                                        </a>
+                                  </div>
+                             </li>  
+                            <!-- Visible business and learning icons -->
+                    <li class="nav-item nav-icon d-none d-sm-flex ms-md-0" style="margin-left: -10px;">
+                        <div class="business-icons justify-content-center align-items-center shadow-sm ps-3 pb-1" style="width: fit-content;border-left: 1px solid rgb(206, 204, 204); background-color: white; display:flex; flex-direction: row; top: 110%; right: 0;" id="showme-onclick">
+                            <button  class="business-icons-focus position-relative flex-column justify-content-center align-items-center" style="border: none; background: transparent; margin-right: -5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                                </svg>
+                                <div class="d-flex justify-content-center align-items-center d-none d-md-block">
+                                    <span class="small-text text-muted me-1">
+                                        For Business
+                                    </span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                        <!-- For business dropdown -->
+                                    <div class="business-dropdown position-absolute shadow-sm d-none flex-column flex-md-row align-items-start justify-content-start rounded p-5 gap-2" style="background-color: white; top: 110%; right: 0px;height: 88vh; overflow: auto;">
+                                        <div class="d-flex flex-column align-items-start px-2" style="width: fit-content;">
+                                            <p class="fw-semibold" style="font-size: large; width: 250px; margin: -5px 0 0 -17px;">Visit More LinkedIn Products</p>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-compass-24.png" alt="">
+                                                    <span>Sell</span>
+                                                </a>
+                                            </div>
+                                            <div class="business-dropdown my-3">
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                    <img src="Project images/icons8-group-48__1_-removebg-preview.png">
+                                                    <span>Groups</span>
+                                                </a>
+                                            </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Talents</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-leader-48.png" alt="">
+                                                        <span>Talent Insights</span>
+                                                    </a>
+                                                </div> 
+                                                <div class="business-dropdown my-3">
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-new-job-40.png" alt="">
+                                                        <span>Post a job</span>
+                                                    </a>
+                                                </div> 
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Sales</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-services-62.png" alt="">
+                                                        <span>Services Marketplace</span>
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="business-dropdown d-flex flex-column just-content-center align-items-start my-3">
+                                                    <span class="text-muted mb-2">Marketing</span>
+                                                    <a href="https://www.linkedin.com/premium/products/" class="d-flex justify-content-center align-items-center gap-3 text-dark fw-semibold text-decoration-none hover-underline-blue" style="font-size: small;">
+                                                        <img src="Project images/icons8-dart-25.png" alt="">
+                                                        <span>Advertise</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-column justify-content-start align-items-start py-4 py-md-0 px-0 px-md-5">
+                                                <p class="fw-semibold" style="font-size: large; width: 250px; margin-left: -15px;">Explore more for business</p>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Hire on Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Find, attract and recruit talents</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Sell with Linkedin</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Unlock sales opportunities</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Post a job for free</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Get qualified applicants quickly</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Advertise your business</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Acquire customers and grow your business</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Learn with LinkedIn</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Courses to develop your employees</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: small;">Admin center</span>
+                                                    <span class="text-muted" style="font-size: x-small;">Manage billing and account details</span>
+                                                </a>
+                                                <a href="https://www.linkedin.com/premium/products/" class="d-flex ms-3 flex-column justify-content-center align-items-start text-decoration-none hover-underline-blue my-3">
+                                                    <span class="fw-semibold text-dark" style="font-size: medium;">Create a company page <span style="font-size: medium; font-weight: bold;">+</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </button>
+                                </div>
+                            </li> 
+                            <li class="nav-item learning-icon nav-icon d-none d-sm-flex ms-md-0" style="margin-left: -10px; margin-bottom: -2px;">
+                                <a href="linkedin.com/learning" class="nav-link d-flex flex-column justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                        <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                                        <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                                        <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                                        <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                                      </svg>
+                                      <span class="small-text text-muted d-none d-md-block">Learning</span>
+                                </a>
+                            </li>          
+            </ul>
+        </div>
+     </nav>
+    </div>
+
+        <!-- The main section -->
+        <main style="margin-top: 80px;">
+            <div class="container-sm">
+                <!-- row -->
+                 <div class="row d-flex justify-content-start">
+                    <!-- Top-left -->
+                    <div class="col-3 p-0 m-0" style=";">
+                        <!-- Accordion -->
+                        <div class="accordion" id="accordionFlushExample" style="width: 320px; ">
+                            <div class="accordion-item">
+                              <div class="accordion-header rounded-3 px-4 py-3" style="background-color: white;">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="text-center text-muted fw-semibold">Manage my network</div>
+                                    <div class="accordion-but outline-0 border-0 position-relative accordion-arrow rounded-circle hover-gray p-1 bg-transparent" type="" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="width: 30px;height: 30px;">
+                                        <button class="position-absolute hover-deep-gray acc-arrowup outline-0 border-0 rounded-circle" style="width: 30px; height: 30px; background-color: white; left: 0; top: 0;"><i class="fa-solid fa-angle-up" style="color: black;"></i></button><button class="position-absolute border-0 outline-0 hover-deep-gray acc-arrowdown1 rounded-circle" style="width: 30px; height: 30px; left: 0; top: 0;"><i class="fa-solid fa-angle-down" style="color: black;"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                               
+                              <div id="flush-collapseOne" class="accordion-collapse collapse border-top border-tertiary p-0" data-bs-parent="#accordionFlushExample" style=";">
+                                <div class="accordion-body p-0 my-3">
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <svg class="span-less-margin" xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="none" focusable="false" class="lazy-loaded" aria-busy="false">
+                                                    <path d="M9 14v6H0v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3Zm5.5-3c1.9 0 3.5-1.6 3.5-3.5S16.4 4 14.5 4 11 5.6 11 7.5s1.6 3.5 3.5 3.5Zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5V20h7v-4.5c0-1.4-1.1-2.5-2.5-2.5ZM4.5 0C2 0 0 2 0 4.5S2 9 4.5 9 9 7 9 4.5 7 0 4.5 0Z" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Connections</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">136</div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <i class="fa-solid fa-address-book"></i>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Contacts</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">345</div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <i class="fa-solid fa-user"></i>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Following & Followers</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">100</div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Events</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">6</div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <i class="fa-solid fa-book"></i>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Pages</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">13</div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <i class="fa-solid fa-newspaper"></i>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Newsletter</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">3</div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center hover-gray px-4 py-3">
+                                        <div class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                            <div>
+                                                <i class="fa-solid fa-hashtag"></i>
+                                            </div>
+                                            <div class="fw-semibold text-muted">Hashtag</div>
+                                        </div>
+                                        <div class="fw-semibold text-muted">113</div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- left mid -->
+                         <div class="mt-3 rounded-3 shadow-sm" style="width: 320px; background-color: white;">
+                            <div class="text-end d-flex flex-row justify-content-end align-items-center">
+                                <div class="small-text text-muted">Ad</div>
+                                <!-- Ellipsis is a modal -->
+                                <button type="button" class="btn outline-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade p-2" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width: 350px; left: 40vw">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Ad options</h1>
+                                          <button type="button" class="rounded-circle hover-deep-gray outline-0 border-0" data-bs-dismiss="modal" aria-label="Close" style="width: 30px; height: 30px; background-color: white;"><i class="fa-solid fa-xmark"></i></button>
+                                        </div>
+                                        <div class="modal-body p-3">
+                                            <div class="d-flex flex-row justify-content-start gap-4 align-items-center py-2 hover-gray">
+                                                <div><i class="fa-solid fa-circle-info"></i></div>
+                                                <div class="text-start">
+                                                    <div class="fw-semibold">Why am I seeing this Ad?</div>
+                                                    <div class="small-text">Manage your Ad preferences</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row justify-content-start gap-4 align-items-center py-2 hover-gray">
+                                                <div><i class="fa-solid fa-eye-slash"></i></div>
+                                                <div class="text-start">
+                                                    <div class="fw-semibold">Hide or report this Ad</div>
+                                                    <div class="small-text">I dont want to see this Ad in my feed</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="px-3 pb-4">
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-lg bg-transparent outline-0 border-0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Looking for a job ?" data-bs-trigger="hover focus" data-bs-content="Jobs are everywhere around you. Let's help you find one">
+                                        <img src="https://media.licdn.com/dms/image/v2/D5610AQF1YUIB-0o-VA/image-pad_100_100/image-pad_100_100/0/1695315785110?e=1726023600&v=beta&t=g1uHPzvEFgOvN93R9K254sZz3-JBDoMfPgKZkaLezTA" alt="">
+                                    </button>
+                                </div>
+                                <div class="text-center text-muted">
+                                    Find jobs that suit your portfolio and are close to you.
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="#" class="btn btn-outline-primary btn-medium rounded-pill fw-semibold">Find job</a>
+                                </div>
+                            </div>
+                            
+                         </div>
+                         <!-- bottom -left(transparent background) -->
+                         <div class="text-center mt-3 px-3 text-center" style="width: 320px;">
+                            <div>
+                                <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">About</a>
+                                <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Accessibility</a> 
+                                <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Help Center</a>
+                                <a href="#" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Privacy & Terms</a>
+                                    <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Ad Choices</a>
+                                    <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Advertising</a>
+                                    
+                                    <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Business Services</a>
+                                    <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">Get the LinkedIn app</a>
+                                    <a href="" class="text-black-50 small-text text-decoration-none hover-underline-blue hover-text-blue mx-1">More</a>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <img src="Project images/Linkedin-Logo-2048x1280-removebg-preview.png" alt="" style="width: 80px;">
+                                <span style="font-size: x-small;">LinkedIn Corporation &#169 2024</span>
+                            </div>
+                         </div>
+                    </div>
+                    <!-- Right section of the main section -->
+                     <div class="col-8 p-0 border rounded-3" style="margin-left: 60px; width: 790px;">
+                        <div class="shadow-sm rounded-3 ps-4" style="background-color: white;">
+                            <button class="border-0 hover-text-dark fw-semibold focused-green-button hover-gray p-3" style="color: rgb(100, 100, 100);">Grow</button>
+                            <button class="border-0 fw-semibold focused-green-button hover-gray p-3" style="color: rgb(100, 100, 100);">Catch up</button>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </main>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-tooltip-popover@1.0.1/index.min.js"></script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
